@@ -31,7 +31,7 @@ let runDeploy = (remote) => {
   shell.exec(`git commit -m 'Deployed via stage.js script'`);
   shell.exec(`git push ${remote} gh-pages -f`);
 
-  shell.echo(`Finished deploying! → https://mozilla.github.io/network/`);
+  shell.echo(`Finished deploying! → https://mozilla.github.io/nsf-challenge/`);
 };
 
 // Check for remote argument

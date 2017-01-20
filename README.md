@@ -1,6 +1,6 @@
 # NSF Challenge
 
-[![Build Status](https://travis-ci.org/mozilla/network.svg?branch=master)](https://travis-ci.org/mozilla/network)
+[![Build Status](https://travis-ci.org/mozilla/nsf-challenge.svg?branch=master)](https://travis-ci.org/mozilla/nsf-challenge)
 [![Uses Mofo Standards](https://MozillaFoundation.github.io/mofo-standards/badge.svg)](https://github.com/MozillaFoundation/mofo-standards)
 
 ## Development
@@ -11,11 +11,11 @@
 
 Run the following terminal commands to get started:
 
-- `git clone https://github.com/mozilla/network.git`
-- `cd network`
+- `git clone https://github.com/mozilla/nsf-challenge.git`
+- `cd nsf-challenge`
 - `npm start`
 
-This will install all dependencies, build the code, start a server at [http://127.0.0.1:2017](http://127.0.0.1:2017), and launch it in your default browser.
+This will install all dependencies, build the code, start a server at [http://127.0.0.1:2018](http://127.0.0.1:2018), and launch it in your default browser.
 
 ### Stack
 

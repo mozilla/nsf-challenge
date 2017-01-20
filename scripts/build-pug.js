@@ -32,11 +32,4 @@ function buildPage(template, target) {
 }
 
 buildPage(`home`, `/`);
-buildPage(`people`, `/people`);
-buildPage(`partners`, `/people/partners`);
-buildPage(`programs`, `/programs`);
-buildPage(`calendar`, `/programs/calendar`);
-buildPage(`projects`, `/projects`);
-buildPage(`campaigns`, `/campaigns`);
-buildPage(`about`, `/about`);
-buildPage(`join`, `/about/join`);
+buildPage(`legal`, `/legal`);
