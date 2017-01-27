@@ -118,9 +118,12 @@ a.btn,
     .container {
       text-align: center;
       a {
+        text-decoration: none;
+        color: #7E7E7E;
         padding: 0 23px;
+        font-weight: 500;
         &.active {
-          font-weight: bold;
+          color: #1C1C1C;
         }
       }
     }
