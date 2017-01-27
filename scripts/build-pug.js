@@ -11,12 +11,9 @@ if (envFlag && envFlag === `--staging`) {
   environmentVariables = JSON.parse((shelljs.cat(`env/default.json`).toString()));
 }
 
-let rawStrings = shelljs.cat(`locales/en-US/general.properties`);
-
 function buildPage(template, target) {
   let viewData = {
     env: environmentVariables,
-    strings: propertiesToObject(rawStrings.toString()),
     templateID: template
   };
 
@@ -32,4 +29,4 @@ function buildPage(template, target) {
 }
 
 buildPage(`home`, `/`);
-buildPage(`legal`, `/legal`);
+buildPage(`rules-and-regulations`, `/rules-and-regulations`);

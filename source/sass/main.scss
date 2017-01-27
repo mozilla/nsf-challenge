@@ -29,3 +29,131 @@ ul {
 // Utility Classes
 
 // Custom Components
+
+header {
+  background-image: url(../_images/hero.jpg);
+  background-position: center 20%;
+  background-color: #00A2AF;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  h1,
+  .header-content {
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .powered-by {
+    font-style: italic;
+    padding-right: 12px;
+  }
+}
+
+.section-header {
+  background: #000000;
+  h4 {
+    color: #FFFFFF;
+    padding: 23px 0;
+  }
+}
+
+.more-info {
+  background: #B0B2E6;
+  text-align: center;
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .info-box {
+    display: inline-block;
+    width: 100%;
+    max-width: 342px;
+    margin: 30px 0;
+  }
+}
+
+a.btn,
+.btn {
+  background: #FEEA36;
+  font-weight: bold;
+}
+
+#sticky-nav {
+  height: 50px;
+  .sticky-container {
+    background: #F1F1F1;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    .container {
+      text-align: center;
+      a {
+        padding: 0 23px;
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+    &.sticky {
+      position: fixed;
+      top: 0;
+    }
+  }
+}
+
+.nav-anchor {
+  height: 50px;
+  margin-top: -50px;
+}
+
+.expander {
+  border-width: 0;
+  font-weight: 300;
+  color: #333333;
+}
+.expander > .expander-item {
+  border-top: 1px solid #d9d9d9;
+}
+.expander > .expander-item > .expander-header {
+  line-height: 32px;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+}
+.expander > .expander-item > .expander-header::after {
+  content: '+';
+  color: #16afe5;
+  font-size: 68px;;
+  font-weight: 200;
+  right: 0;
+  width: 48px;
+  text-align: center;
+}
+.expander > .expander-item-active > .expander-header::after {
+  content: '_';
+  margin-top: -45px;
+  font-size: 52px;
+}
+.expander-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .2s;
+}
+.expander-content.expander-content-active {
+  max-height: 1500px;
+  transition: max-height 3s;
+}
+.expander-item:last-child {
+  border-bottom: 1px solid #d9d9d9;
+}
+.expander .expander-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+

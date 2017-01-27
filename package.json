@@ -20,7 +20,7 @@
     "test": "run-s test:**",
     "watch:images": "chokidar 'source/images/*' -c 'npm run build:images'",
     "watch:js": "chokidar 'source/js/*.js' -c 'npm run build:js'",
-    "watch:pug": "chokidar 'source/pug/*/**.pug' 'locales/**/*.properties' -c 'npm run build:pug'",
+    "watch:pug": "chokidar 'source/pug/*/**.pug' -c 'npm run build:pug'",
     "watch:sass": "chokidar 'source/sass/main.scss' -c 'npm run build:sass'"
   },
   "author": "Mozilla",
@@ -32,6 +32,7 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "chokidar-cli": "^1.2.0",
+    "jstransformer-markdown": "^1.1.0",
     "eslint": "^3.13.1",
     "eslint-plugin-react": "^6.9.0",
     "java.properties.js": "^1.0.2",
@@ -50,9 +51,16 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
+    "html-loader": "^0.4.4",
+    "json-loader": "^0.5.4",
+    "loader-utils": "^0.2.16",
+    "markdown-loader": "^0.1.7",
+    "markdown-react-js": "^0.3.0",
+    "marked": "^0.3.6",
     "mofo-bootstrap": "2.1.0",
     "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "react-dom": "15.4.2",
+    "react-markdown": "^2.4.4"
   },
   "pugLintConfig": {
     "disallowHtmlText": true,

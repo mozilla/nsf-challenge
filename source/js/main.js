@@ -2,10 +2,19 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Details from './components/details.js';
+import StickyNav from './components/sticky-nav.js';
 
-if (document.getElementById(`footer`)) {
+if (document.getElementById(`sticky-nav`)) {
   ReactDOM.render(
-    <h6>Footer (via React)</h6>,
-    document.getElementById(`footer`)
+    <StickyNav/>,
+    document.getElementById(`sticky-nav`)
+  );
+}
+
+if (document.getElementById(`expander-container`)) {
+  ReactDOM.render(
+    <Details/>,
+    document.getElementById(`expander-container`)
   );
 }
