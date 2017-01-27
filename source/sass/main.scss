@@ -32,11 +32,11 @@ ul {
 
 header {
   background-image: url(../_images/hero.jpg);
-  background-position: center 20%;
+  background-position: 40% center;
   background-color: #00A2AF;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  min-height: 600px;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -44,6 +44,8 @@ header {
   .header-content {
     text-align: center;
     color: #FFFFFF;
+    margin-top: 34px;
+    margin-bottom: 34px;
   }
 
   .powered-by {
