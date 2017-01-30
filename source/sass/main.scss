@@ -188,8 +188,21 @@ a.btn,
 
 .challenges {
   .challenges-switcher {
+    border-bottom: solid 1px #B0B2E6;
     .challenges-button {
+      &:not(:last-child) {
+        margin-right: 28px;
+      }
+      width: calc(50% - 14px);
+      max-width: 541px;
+      margin-bottom: -1px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
       background: #B0B2E6;
+      border-color: #B0B2E6;
+      border-width: 1px 1px 0 1px;
+      border-style: solid;
       &.active {
         background: #FFFFFF;
       }
