@@ -108,12 +108,6 @@ header {
   }
 }
 
-a.btn,
-.btn {
-  background: #FEEA36;
-  font-weight: bold;
-}
-
 #sticky-nav {
   height: 50px;
   .sticky-container {
@@ -125,12 +119,17 @@ a.btn,
     .container {
       text-align: center;
       a {
-        text-decoration: none;
-        color: #7E7E7E;
+        border: none;
+        color: #7A7A7A;
         padding: 0 23px;
         font-weight: 500;
-        &.active {
-          color: #1C1C1C;
+        &:hover {
+          background: none;
+          margin: 0;
+        }
+        &.active,
+        &:hover {
+          color: #161616;
         }
       }
     }
@@ -224,6 +223,30 @@ a.btn,
   }
 }
 
+a.btn,
+.btn {
+  background: #FEEB34;
+  font-weight: bold;
+  border: none;
+  &:hover {
+    border: none;
+    background: #FEE601;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    border: 2px solid #FEEA36;
+    background: #FEEA36;
+    text-decoration: none;
+    margin: 0 -2px;
+    color: #000000;
+  }
+  border-bottom: 2px solid #FEEA36;
+}
+
 .events {
   text-align: center;
   .event-container {
@@ -231,11 +254,14 @@ a.btn,
     max-width: 235px;
     display: inline-block;
     a {
+      &:hover {
+        margin: 0;
+        border: none;
+      }
       &:hover span {
         border: 2px solid #FEEA36;
         background: #FEEA36;
       }
-      text-decoration: none;
       div {
         margin: 10px 0;
         span {
