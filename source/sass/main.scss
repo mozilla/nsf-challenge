@@ -129,6 +129,7 @@ a.btn,
     }
     &.sticky {
       position: fixed;
+      z-index: 1;
       top: 0;
     }
   }
@@ -193,10 +194,11 @@ a.btn,
       &:not(:last-child) {
         margin-right: 28px;
       }
+      font-size: 22px;
       width: calc(50% - 14px);
-      max-width: 541px;
+      cursor: pointer;
       margin-bottom: -1px;
-      height: 50px;
+      min-height: 50px;
       display: inline-flex;
       align-items: center;
       background: #B0B2E6;
@@ -211,6 +213,19 @@ a.btn,
   .challenges-content {
     &.hidden {
       display: none;
+    }
+  }
+}
+
+.events {
+  text-align: center;
+  .event-container {
+    text-align: center;
+    max-width: 235px;
+    display: inline-block;
+    img {
+      height: 235px;
+      width: 235px;
     }
   }
 }

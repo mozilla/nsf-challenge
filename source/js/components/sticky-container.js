@@ -26,6 +26,7 @@ var StickyButton = React.createClass({
   },
   componentDidMount: function() {
     document.addEventListener(`scroll`, this.onScroll);
+    this.onScroll();
   },
   componentWillUnmount: function() {
     document.removeEventListener(`scroll`, this.onScroll);
