@@ -1,13 +1,7 @@
-var marked = require("marked");
-var renderer = new marked.Renderer();
-
 module.exports = {
   entry: `./source/js/main.js`,
   output: {
     filename: `./dest/_js/main.compiled.js`
-  },
-  markdownLoader: {
-    renderer: renderer
   },
   module: {
     loaders: [
@@ -21,7 +15,7 @@ module.exports = {
       }, {
         test: /\.md$/,
         exclude: /node_modules/,
-        loader: `html!markdown`
+        loader: `raw-loader`
       },{
         test: /\.json$/,
         loader: 'json'
