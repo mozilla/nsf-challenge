@@ -186,3 +186,18 @@ a.btn,
   justify-content: space-between;
 }
 
+.challenges {
+  .challenges-switcher {
+    .challenges-button {
+      background: #B0B2E6;
+      &.active {
+        background: #FFFFFF;
+      }
+    }
+  }
+  .challenges-content {
+    &.hidden {
+      display: none;
+    }
+  }
+}
