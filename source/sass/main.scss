@@ -223,6 +223,22 @@ a.btn,
     text-align: center;
     max-width: 235px;
     display: inline-block;
+    a {
+      &:hover span {
+        border: 2px solid #FEEA36;
+        background: #FEEA36;
+      }
+      text-decoration: none;
+      div {
+        margin: 10px 0;
+        span {
+          border-bottom: 2px solid #FEEA36;
+          font-weight: 500;
+          color: #000000;
+          font-size: 20px;
+        }
+      }
+    }
     img {
       height: 235px;
       width: 235px;
