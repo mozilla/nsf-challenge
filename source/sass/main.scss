@@ -67,13 +67,20 @@ header {
   text-align: center;
   .container {
     display: flex;
+    height: 220px;
     justify-content: space-around;
+    align-items: center;
   }
   .info-box {
     display: inline-block;
     width: 100%;
     max-width: 342px;
-    margin: 30px 0;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33px;
+    .btn {
+      margin-top: 15px;
+    }
   }
 }
 
