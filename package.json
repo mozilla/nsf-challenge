@@ -52,6 +52,7 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "json-loader": "^0.5.4",
     "mofo-bootstrap": "2.1.0",
     "react": "15.4.2",

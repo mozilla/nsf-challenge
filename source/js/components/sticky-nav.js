@@ -1,4 +1,5 @@
 var React = require(`react`);
+import classnames from "classnames";
 
 import StickyContainer from './sticky-container.js';
 
@@ -7,10 +8,9 @@ var MenuLink = React.createClass({
     this.props.activate(this.props.item);
   },
   render: function() {
-    var className = "";
-    if (this.props.active === this.props.item) {
-      className += "active";
-    }
+    var className = classnames({
+      "active": this.props.active === this.props.item
+    });
     return (
       <a className={className} onClick={this.onClick} href={this.props.href}>{this.props.children}</a>
     );

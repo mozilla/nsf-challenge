@@ -1,4 +1,5 @@
 var React = require(`react`);
+import classnames from "classnames";
 
 var StickyButton = React.createClass({
   getInitialState: function() {
@@ -32,11 +33,10 @@ var StickyButton = React.createClass({
     document.removeEventListener(`scroll`, this.onScroll);
   },
   render: function() {
-    var className = this.props.className || "";
+    var className = classnames(this.props.className, {
+      "sticky": this.state.sticky
+    });
 
-    if (this.state.sticky) {
-      className += ' sticky';
-    }
     return (
       <div className={className}>
         {this.props.children}

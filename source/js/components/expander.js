@@ -1,4 +1,5 @@
 var React = require(`react`);
+import classnames from "classnames";
 
 var Expander = React.createClass({
   render: function() {
@@ -19,12 +20,12 @@ var Panel = React.createClass({
     this.props.activateKey(itemKey);
   },
   render: function() {
-    var itemClassName = "expander-item";
-    var contentClassName = "expander-content";
-    if (this.props.itemKey === this.props.activeKey) {
-      itemClassName += " expander-item-active";
-      contentClassName += " expander-content-active";
-    }
+    var itemClassName = classnames("expander-item", {
+      "expander-item-active": this.props.itemKey === this.props.activeKey
+    });
+    var contentClassName = classnames("expander-content", {
+      "expander-content-active": this.props.itemKey === this.props.activeKey
+    });
     return (
       <div id={this.props.itemKey} className={itemClassName}>
         <div onClick={this.onClick} className="expander-header">{this.props.header}</div>
