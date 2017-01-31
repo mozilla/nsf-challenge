@@ -1,15 +1,35 @@
-var React = require(`react`);
+import React from 'react';
 
 import { Expander, Panel } from './expander.js';
-import item1 from "../../markdown/details/item-1.md";
-import item2 from "../../markdown/details/item-2.md";
-import item3 from "../../markdown/details/item-3.md";
-import item4 from "../../markdown/details/item-4.md";
-import item5 from "../../markdown/details/item-5.md";
-import item6 from "../../markdown/details/item-6.md";
-import item7 from "../../markdown/details/item-7.md";
-import item8 from "../../markdown/details/item-8.md";
 import ReactMarkdown from "react-markdown";
+
+var items = [
+  {
+    source: require("../../markdown/details/item-1.md"),
+    header: "How to enter the challenge"
+  }, {
+    source: require("../../markdown/details/item-2.md"),
+    header: "Timeline"
+  }, {
+    source: require("../../markdown/details/item-3.md"),
+    header: "Judging"
+  }, {
+    source: require("../../markdown/details/item-4.md"),
+    header: "Eligibility requirements"
+  }, {
+    source: require("../../markdown/details/item-5.md"),
+    header: "Information on teams"
+  }, {
+    source: require("../../markdown/details/item-6.md"),
+    header: "Challenge rules"
+  }, {
+    source: require("../../markdown/details/item-7.md"),
+    header: "FAQ"
+  }, {
+    source: require("../../markdown/details/item-8.md"),
+    header: "Getting Started"
+  },
+];
 
 var Details = React.createClass({
   getInitialState: function() {
@@ -27,30 +47,15 @@ var Details = React.createClass({
   render: function() {
     return (
       <Expander>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-1" header="How to enter the challenge">
-          <ReactMarkdown source={item1}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-2" header="Timeline">
-          <ReactMarkdown source={item2}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-3" header="Judging">
-          <ReactMarkdown source={item3}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-4" header="Eligibility requirements">
-          <ReactMarkdown source={item4}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-5" header="Information on teams">
-          <ReactMarkdown source={item5}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-6" header="Challenge rules">
-          <ReactMarkdown source={item6}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-7" header="FAQ">
-          <ReactMarkdown source={item7}/>
-        </Panel>
-        <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey="item-8" header="Getting Started">
-          <ReactMarkdown source={item8}/>
-        </Panel>
+        {
+          items.map((item, index) => {
+            return (
+              <Panel activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey={"item-" + index} header={item.header}>
+                <ReactMarkdown source={item.source}/>
+              </Panel>
+            );
+          })
+        }
       </Expander>
     );
   }

@@ -1,4 +1,4 @@
-var React = require(`react`);
+import React from 'react';
 import challenge1 from "../../markdown/challenges/challenge-1.md";
 import challenge2 from "../../markdown/challenges/challenge-2.md";
 import ReactMarkdown from "react-markdown";

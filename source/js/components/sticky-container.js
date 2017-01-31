@@ -1,4 +1,4 @@
-var React = require(`react`);
+import React from 'react';
 import classnames from "classnames";
 
 var StickyButton = React.createClass({
