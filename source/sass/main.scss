@@ -262,19 +262,21 @@ a.btn,
   }
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-
-  &:hover {
-    border: 2px solid #feea36;
-    background: #feea36;
+.nsf-page {
+  a {
     text-decoration: none;
-    margin: 0 -2px;
-    color: #000;
-  }
+    color: inherit;
 
-  border-bottom: 2px solid #feea36;
+    &:hover {
+      border: 2px solid #feea36;
+      background: #feea36;
+      text-decoration: none;
+      margin: 0 -2px;
+      color: #000;
+    }
+
+    border-bottom: 2px solid #feea36;
+  }
 }
 
 .events {
