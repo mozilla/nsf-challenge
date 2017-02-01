@@ -1,4 +1,3 @@
-let propertiesToObject = require(`java.properties.js`).default;
 let pug = require(`pug`);
 let shelljs = require(`shelljs`);
 
@@ -11,12 +10,9 @@ if (envFlag && envFlag === `--staging`) {
   environmentVariables = JSON.parse((shelljs.cat(`env/default.json`).toString()));
 }
 
-let rawStrings = shelljs.cat(`locales/en-US/general.properties`);
-
 function buildPage(template, target) {
   let viewData = {
     env: environmentVariables,
-    strings: propertiesToObject(rawStrings.toString()),
     templateID: template
   };
 
@@ -32,4 +28,4 @@ function buildPage(template, target) {
 }
 
 buildPage(`home`, `/`);
-buildPage(`legal`, `/legal`);
+buildPage(`rules-and-regulations`, `/rules-and-regulations`);

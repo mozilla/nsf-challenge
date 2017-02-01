@@ -20,7 +20,7 @@
     "test": "run-s test:**",
     "watch:images": "chokidar 'source/images/*' -c 'npm run build:images'",
     "watch:js": "chokidar 'source/js/*.js' -c 'npm run build:js'",
-    "watch:pug": "chokidar 'source/pug/*/**.pug' 'locales/**/*.properties' -c 'npm run build:pug'",
+    "watch:pug": "chokidar 'source/pug/*/**.pug' -c 'npm run build:pug'",
     "watch:sass": "chokidar 'source/sass/main.scss' -c 'npm run build:sass'"
   },
   "author": "Mozilla",
@@ -35,6 +35,7 @@
     "eslint": "^3.13.1",
     "eslint-plugin-react": "^6.9.0",
     "java.properties.js": "^1.0.2",
+    "jstransformer-markdown": "^1.1.0",
     "live-server": "^1.2.0",
     "mofo-style": "^2.4.0",
     "node-sass": "^4.3.0",
@@ -43,6 +44,7 @@
     "postcss-cli": "^2.3.3",
     "pug": "^2.0.0-beta5",
     "pug-lint": "^2.3.0",
+    "raw-loader": "^0.5.1",
     "shelljs": "^0.7.6",
     "shx": "^0.2.2",
     "stylelint": "^7.7.1",
@@ -50,9 +52,12 @@
     "webpack": "^1.14.0"
   },
   "dependencies": {
-    "mofo-bootstrap": "2.1.0",
+    "classnames": "^2.2.5",
+    "json-loader": "^0.5.4",
+    "mofo-bootstrap": "3.1.0",
     "react": "15.4.2",
-    "react-dom": "15.4.2"
+    "react-dom": "15.4.2",
+    "react-markdown": "^2.4.4"
   },
   "pugLintConfig": {
     "disallowHtmlText": true,

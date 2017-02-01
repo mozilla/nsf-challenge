@@ -23,8 +23,6 @@ This will install all dependencies, build the code, start a server at [http://12
 
 HTML is generated from [Pug](https://pugjs.org) templates (formerly known as Jade).
 
-Localized strings are pulled from [Java .properties](https://en.wikipedia.org/wiki/.properties) files located in `/locales`.
-
 #### CSS
 
 CSS is generated from [Sass](http://sass-lang.com/). The [Mofo Bootstrap](https://github.com/mozilla/mofo-bootstrap) theme is pulled in by default.
@@ -41,11 +39,12 @@ To add a React component, you can target a container element from `/source/js/ma
 .
 ├── env <- Environment variables
 ├── dest <- Compiled code generated from source. Don't edit!
-├── locales <- Localized strings (Java .properties syntax)
 ├── scripts <- Scripts run by npm tasks
 └── source <- Source code
     ├── images <- Image assets
     ├── js <- JS code
+    │   └── components <- React code
+    ├── markdown <- markdown content
     ├── pug <- Pug/Jade templates
     └── sass <- Sass code
 ```
