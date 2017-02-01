@@ -211,7 +211,6 @@ header {
   }
 
   .challenges-content {
-    
     &.hidden {
       display: none;
     }
@@ -241,11 +240,13 @@ a.btn,
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+
     img {
       margin-right: 30px;
       height: 40px;
       width: 40px;
     }
+
     p {
       margin-bottom: 0;
     }
@@ -253,10 +254,12 @@ a.btn,
 
   .section-header {
     background: #000;
+
     .container {
       margin-top: 0;
       margin-bottom: 0;
     }
+
     h4 {
       color: #fff;
       padding: 23px 0;
