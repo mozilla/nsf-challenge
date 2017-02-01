@@ -4,11 +4,21 @@
 
 .container
   include:markdown ../../markdown/challenges/challenges.md
-  include:markdown ../../markdown/challenges/challenges-impact.md
-  include:markdown ../../markdown/challenges/challenges-achievement.md
-  include:markdown ../../markdown/challenges/challenges-creativity.md
-  include:markdown ../../markdown/challenges/challenges-affordability.md
-  include:markdown ../../markdown/challenges/challenges-adaptability.md
+  .challenge-list-item
+    img(src=`${env.virtualRoot}_images/icon-impact.svg`)
+    include:markdown ../../markdown/challenges/challenges-impact.md
+  .challenge-list-item
+    img(src=`${env.virtualRoot}_images/icon-technical.svg`)
+    include:markdown ../../markdown/challenges/challenges-achievement.md
+  .challenge-list-item
+    img(src=`${env.virtualRoot}_images/icon-creativity.svg`)
+    include:markdown ../../markdown/challenges/challenges-creativity.md
+  .challenge-list-item
+    img(src=`${env.virtualRoot}_images/icon-affordability.svg`)
+    include:markdown ../../markdown/challenges/challenges-affordability.md
+  .challenge-list-item
+    img(src=`${env.virtualRoot}_images/icon-adaptability.svg`)
+    include:markdown ../../markdown/challenges/challenges-adaptability.md
 
 .container
   #challenges-switcher
