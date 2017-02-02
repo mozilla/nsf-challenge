@@ -16,12 +16,12 @@
     "start": "npm i && npm run build && run-p server watch:**",
     "test:eslint": "eslint --config ./.eslintrc.yaml scripts/*.js source/js/*.js",
     "test:pug": "pug-lint source/pug/**/*.pug",
-    "test:scss": "stylelint 'source/sass/main.scss' --syntax scss",
+    "test:scss": "stylelint 'source/sass/*.scss' --syntax scss",
     "test": "run-s test:**",
     "watch:images": "chokidar 'source/images/*' -c 'npm run build:images'",
     "watch:js": "chokidar 'source/js/*.js' -c 'npm run build:js'",
     "watch:pug": "chokidar 'source/pug/*/**.pug' -c 'npm run build:pug'",
-    "watch:sass": "chokidar 'source/sass/main.scss' -c 'npm run build:sass'"
+    "watch:sass": "chokidar 'source/sass/*.scss' -c 'npm run build:sass'"
   },
   "author": "Mozilla",
   "license": "MPL-2.0",
