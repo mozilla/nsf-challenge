@@ -26,15 +26,32 @@ img {
   max-width: 100%;
 }
 
-ul {
-  list-style: none;
-}
-
 // Utility Classes
 
 // Custom Components
 
-header {
+h1 {
+  font-weight: 700;
+  font-size: 44px;
+  margin: 16px auto 10px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $black;
+}
+
+header.page-header {
   background-image: url(../_images/hero.jpg);
   background-position: 40% center;
   background-color: #00a2af;
@@ -51,15 +68,10 @@ header {
   }
 
   h1 {
-    font-weight: 600;
-    font-size: 46px;
-    margin: 16px auto 10px;
-    width: 100%;
     max-width: 610px;
   }
 
   .header-content {
-    text-align: center;
 
     p {
       font-size: 19px;
@@ -78,30 +90,20 @@ header {
 }
 
 .rules-and-regulations {
-  .header {
-    text-align: center;
-    margin: 60px 0 30px;
+  h1 {
+    margin-bottom: 30px;
 
-    h3 {
-      font-size: 2.75rem;
-      display: inline;
+    span {
       background: $nsf-yellow;
-      box-decoration-break: clone;
-      margin: 0 -5px;
-      padding: 10px 5px 4px;
       line-height: 1.45;
+      box-decoration-break: clone;
+      padding: 10px 5px 4px;
     }
+  }
 
-    h4 {
-      margin-top: 1.8rem;
-      font-size: 2rem;
-    }
-
-    h3,
-    h4 {
-      font-weight: bold;
-      color: #000;
-    }
+  h3,
+  h4 {
+    color: #000;
   }
 }
 
@@ -327,23 +329,25 @@ button {
     .container {
       margin-top: 0;
       margin-bottom: 0;
-      min-height: 220px;
-
-      @media screen and (min-width: $bp-md) {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
     }
 
     .info-box {
-      margin: 1.5rem 0;
-      display: inline-block;
-      width: 100%;
-      max-width: 342px;
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 33px;
+      margin-top: 1.5rem;
+
+      &:not(:first-child) {
+        margin-bottom: 1.5rem;
+      }
+
+      header {
+        color: $black;
+        font-size: 24px;
+        font-weight: 500;
+
+        @media screen and (min-width: $bp-md) {
+          max-width: 340px;
+          margin: 0 auto;
+        }
+      }
 
       .btn {
         margin-top: 15px;
