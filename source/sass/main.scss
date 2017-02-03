@@ -375,6 +375,10 @@ button {
   }
 }
 
+.footer-link-cookies::before {
+  background-image: url(../_images/icon-cookies.svg);
+}
+
 .events {
   margin-top: 55px;
   text-align: center;
