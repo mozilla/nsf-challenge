@@ -231,11 +231,13 @@ header.page-header {
       }
 
       font-size: 22px;
+      font-weight: 200;
       cursor: pointer;
       margin-bottom: -1px;
       min-height: 50px;
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       background: $nsf-purple;
       border-color: $nsf-purple;
       border-width: 1px 1px 0;
@@ -252,6 +254,10 @@ header.page-header {
       display: none;
     }
   }
+}
+
+.mofo-footer .org-info .logo-container {
+  min-width: 6rem;
 }
 
 a.btn,
