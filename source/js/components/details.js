@@ -6,29 +6,26 @@ import ReactMarkdown from "react-markdown";
 var items = [
   {
     source: require("../../markdown/details/item-1.md"),
-    header: "How to enter the challenge"
+    header: "Who can enter the challenges"
   }, {
     source: require("../../markdown/details/item-2.md"),
-    header: "Timeline"
+    header: "What to submit"
   }, {
     source: require("../../markdown/details/item-3.md"),
-    header: "Judging"
+    header: "Timeline"
   }, {
     source: require("../../markdown/details/item-4.md"),
-    header: "Eligibility requirements"
+    header: "Judging and awards"
   }, {
     source: require("../../markdown/details/item-5.md"),
     header: "Information on teams"
   }, {
     source: require("../../markdown/details/item-6.md"),
-    header: "Challenge rules"
-  }, {
-    source: require("../../markdown/details/item-7.md"),
     header: "FAQ"
   }, {
-    source: require("../../markdown/details/item-8.md"),
+    source: require("../../markdown/details/item-7.md"),
     header: "Getting Started"
-  },
+  }
 ];
 
 var Details = React.createClass({
