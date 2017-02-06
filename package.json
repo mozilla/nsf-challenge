@@ -19,9 +19,9 @@
     "test:scss": "stylelint 'source/sass/*.scss' --syntax scss",
     "test": "run-s test:**",
     "watch:images": "chokidar 'source/images/*' -c 'npm run build:images'",
-    "watch:js": "chokidar 'source/js/*.js' -c 'npm run build:js'",
-    "watch:pug": "chokidar 'source/pug/*/**.pug' -c 'npm run build:pug'",
-    "watch:sass": "chokidar 'source/sass/*.scss' -c 'npm run build:sass'"
+    "watch:js": "chokidar 'source/js/*/*.js' -c 'npm run build:js'",
+    "watch:pug": "chokidar 'source/pug/*/*.pug' -c 'npm run build:pug'",
+    "watch:sass": "chokidar 'source/sass/*/*.scss' -c 'npm run build:sass'"
   },
   "author": "Mozilla",
   "license": "MPL-2.0",
