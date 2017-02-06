@@ -14,18 +14,21 @@ var Expander = React.createClass({
 var Panel = React.createClass({
   onClick: function() {
     var itemKey = this.props.itemKey;
+
     if (itemKey === this.props.activeKey) {
-      itemKey = "";
+      itemKey = ``;
     }
     this.props.activateKey(itemKey);
   },
   render: function() {
-    var itemClassName = classnames("expander-item", {
+    var itemClassName = classnames(`expander-item`, {
       "expander-item-active": this.props.itemKey === this.props.activeKey
     });
-    var contentClassName = classnames("expander-content", {
+
+    var contentClassName = classnames(`expander-content`, {
       "expander-content-active": this.props.itemKey === this.props.activeKey
     });
+
     return (
       <div id={this.props.itemKey} className={itemClassName}>
         <div onClick={this.onClick} className="expander-header">{this.props.header}</div>

@@ -9,6 +9,7 @@ var StickyButton = React.createClass({
   },
   checkSticky: function() {
     var position = window.scrollY;
+
     if (this.props.stickyTo) {
       return position <= this.props.stickyTo();
     } else if (this.props.stickyFrom) {

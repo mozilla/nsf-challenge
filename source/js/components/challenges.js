@@ -9,9 +9,10 @@ var TabButton = React.createClass({
     this.props.activateTab(this.props.tabIndex);
   },
   render: function() {
-    var className = classnames("challenges-button", {
+    var className = classnames(`challenges-button`, {
       "active": this.props.activeTab === this.props.tabIndex
     });
+
     return (
       <button onClick={this.onClick} className={className}>{this.props.children}</button>
     );
@@ -20,9 +21,10 @@ var TabButton = React.createClass({
 
 var TabContent = React.createClass({
   render: function() {
-    var className = classnames("challenges-content", {
+    var className = classnames(`challenges-content`, {
       "hidden": this.props.activeTab !== this.props.tabIndex
     });
+
     return (
       <div className={className}>{this.props.children}</div>
     );
@@ -33,7 +35,7 @@ var Challenges = React.createClass({
   getInitialState: function() {
     return {
       activeTab: 1
-    }
+    };
   },
   activateTab: function(tab) {
     if (tab !== this.state.activeTab) {

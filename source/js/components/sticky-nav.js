@@ -11,6 +11,7 @@ var MenuLink = React.createClass({
     var className = classnames({
       "active": this.props.active === this.props.item
     });
+
     return (
       <a className={className} onClick={this.onClick} href={this.props.href}>{this.props.children}</a>
     );
@@ -20,12 +21,12 @@ var MenuLink = React.createClass({
 var StickyNav = React.createClass({
   getInitialState: function() {
     return {
-      active: window.location.hash.replace("#", "") || ""
+      active: window.location.hash.replace(`#`, ``) || ``
     };
   },
   activate: function(active) {
     this.setState({
-      active: active || ""
+      active: active || ``
     });
   },
   getPosition: function() {
@@ -33,9 +34,10 @@ var StickyNav = React.createClass({
       return 0;
     }
     return this.stickyContainer.offsetTop;
-},
+  },
   render: function() {
     var active = this.state.active;
+
     return (
       <div ref={(element) => { this.stickyContainer = element; }}>
         <StickyContainer className="sticky-container" stickyFrom={this.getPosition}>
