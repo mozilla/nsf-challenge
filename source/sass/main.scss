@@ -271,6 +271,19 @@ button {
   font-family: inherit;
 }
 
+.rules-regulations-page {
+  h1 {
+    a {
+      border-bottom: none;
+
+      &:hover {
+        border: none;
+        margin: 0;
+      }
+    }
+  }
+}
+.rules-regulations-page,
 .nsf-page {
   .container {
     margin-top: 85px;
