@@ -285,6 +285,7 @@ button {
     background: $nsf-yellow;
     font-weight: bold;
     border: none;
+    color: $gray-darkest;
 
     &:focus {
       outline: none;
@@ -293,6 +294,7 @@ button {
     &:hover {
       border: none;
       background: darken($nsf-yellow, 10%);
+      color: $gray-darkest;
     }
   }
 
