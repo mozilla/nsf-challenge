@@ -30,7 +30,8 @@ var Panel = React.createClass({
     });
 
     return (
-      <div id={this.props.itemKey} className={itemClassName}>
+      <div className={itemClassName}>
+        <div id={this.props.itemKey} className="nav-anchor"></div>
         <div onClick={this.onClick} className="expander-header">{this.props.header}</div>
         <div className={contentClassName}>
           {this.props.children}
