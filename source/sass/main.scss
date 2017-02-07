@@ -32,7 +32,12 @@ img {
 
 h1 {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 2rem;
+
+  @media screen and (min-width: $bp-sm) {
+    font-size: 2.75rem;
+  }
+
   margin: 16px auto 10px;
   width: 100%;
 }
@@ -57,7 +62,12 @@ header.page-header {
   background-color: #00a2af;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 520px;
+
+  @media screen and (min-width: $bp-sm) {
+    min-height: 600px;
+  }
+
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -73,12 +83,16 @@ header.page-header {
 
   .header-content {
     p {
-      font-size: 19px;
+      font-size: 1rem;
       font-weight: 600;
       width: 100%;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+
+      @media screen and (min-width: $bp-sm) {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -273,8 +287,13 @@ button {
 
 .nsf-page {
   .container {
-    margin-top: 85px;
-    margin-bottom: 85px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-sm) {
+      margin-top: 85px;
+      margin-bottom: 85px;
+    }
   }
 
   a.btn,
