@@ -12,6 +12,12 @@ var Expander = React.createClass({
 });
 
 var Panel = React.createClass({
+  propTypes: {
+    children: React.PropTypes.any.isRequired,
+    itemKey: React.PropTypes.string.isRequired,
+    activeKey: React.PropTypes.string.isRequired,
+    header: React.PropTypes.string.isRequired
+  },
   onClick: function() {
     var itemKey = this.props.itemKey;
 
@@ -20,20 +26,37 @@ var Panel = React.createClass({
     }
     this.props.activateKey(itemKey);
   },
+  setHeight: function() {
+    var expanded = this.props.itemKey === this.props.activeKey;
+    var height = `0`;
+
+    if (this.content && expanded) {
+      height = this.content.offsetHeight + `px`;
+    }
+    this.container.style.height = height;
+  },
+  componentDidUpdate: function() {
+    this.setHeight();
+  },
+  componentDidMount: function() {
+    this.setHeight();
+    document.addEventListener(`resize`, this.setHeight);
+  },
+  componentWillUnmount: function() {
+    document.removeEventListener(`resize`, this.setHeight);
+  },
   render: function() {
     var itemClassName = classnames(`expander-item`, {
       "expander-item-active": this.props.itemKey === this.props.activeKey
     });
 
-    var contentClassName = classnames(`expander-content`, {
-      "expander-content-active": this.props.itemKey === this.props.activeKey
-    });
-
     return (
       <div id={this.props.itemKey} className={itemClassName}>
         <div onClick={this.onClick} className="expander-header">{this.props.header}</div>
-        <div className={contentClassName}>
-          {this.props.children}
+        <div ref={(element) => { this.container = element; }} className="expander-content">
+          <div ref={(element) => { this.content = element; }}>
+            {this.props.children}
+          </div>
         </div>
       </div>
     );

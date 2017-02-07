@@ -20,6 +20,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -186,13 +187,8 @@ header.page-header {
 
 .expander-content {
   overflow: hidden;
-  max-height: 0;
-  transition: max-height 0.2s;
-}
-
-.expander-content.expander-content-active {
-  max-height: 1500px;
-  transition: max-height 3s;
+  height: 0;
+  transition: height 0.3s;
 }
 
 .expander-item:last-child {
