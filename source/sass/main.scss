@@ -279,10 +279,15 @@ button {
       &:hover {
         border: none;
         margin: 0;
+
+        span {
+          background: darken($nsf-yellow, 10%);
+        }
       }
     }
   }
 }
+
 .rules-regulations-page,
 .nsf-page {
   .container {
