@@ -183,27 +183,28 @@ header.page-header {
 }
 
 .expander > .expander-item > .expander-header {
-  line-height: 32px;
-  padding: 10px 0;
+  line-height: 28px;
+  padding: 16px 0;
   cursor: pointer;
   position: relative;
-  font-size: 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .expander > .expander-item > .expander-header::after {
   content: '+';
   color: $nsf-purple;
-  font-size: 68px;
-  font-weight: 200;
   right: 0;
-  width: 48px;
   text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  width: 28px;
+  height: 28px;
+  padding-top: 2px;
 }
 
 .expander > .expander-item-active > .expander-header::after {
-  content: '_';
-  margin-top: -45px;
-  font-size: 52px;
+  content: '-';
 }
 
 .expander-content {

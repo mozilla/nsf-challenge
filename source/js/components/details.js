@@ -31,12 +31,30 @@ var Details = React.createClass({
       activeKey: ``
     };
   },
-  onKeyChange: function(key) {
-    if (key !== this.state.activeKey) {
+  updateKey: function(newActiveKey) {
+    if (newActiveKey !== this.state.activeKey) {
       this.setState({
-        activeKey: key
+        activeKey: newActiveKey
       });
     }
+  },
+  updateHash: function(key) {
+    var hash = ``;
+
+    if (key) {
+      hash = `#` + key;
+    }
+    history.replaceState({}, ``, window.location.origin + window.location.pathname + window.location.search + hash);
+    this.updateKey(key);
+  },
+  componentDidUpdate: function() {
+    this.updateKey(window.location.hash.replace(`#`, ``));
+  },
+  componentDidMount: function() {
+    this.updateKey(window.location.hash.replace(`#`, ``));
+  },
+  onKeyChange: function(key) {
+    this.updateHash(key);
   },
   render: function() {
     return (
