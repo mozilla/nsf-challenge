@@ -315,20 +315,38 @@ button {
     height: 42px;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
+    padding-right: 2.5rem;
     cursor: pointer;
     background: $nsf-yellow;
     font-weight: bold;
     border: none;
     color: $gray-darkest;
+    position: relative;
 
     &:focus {
       outline: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.7rem;
+      height: 1.2rem;
+      font-size: 1rem;
+      background-image: url(../_images/icon-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: 0.7rem 0.24rem;
+      transition: margin 0.3s;
     }
 
     &:hover {
       border: none;
       background: darken($nsf-yellow, 10%);
       color: $gray-darkest;
+
+      &::after {
+        margin-left: 0.2rem;
+      }
     }
   }
 
