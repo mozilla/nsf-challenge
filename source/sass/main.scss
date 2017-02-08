@@ -436,23 +436,19 @@ button {
 .events {
   margin-top: 55px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   .event-container {
-    text-align: center;
-    max-width: 235px;
-    display: inline-block;
+    width: 100%;
+    max-width: calc(50% - 15px);
+
+    img {
+      width: 100%;
+    }
 
     a {
-      &:hover {
-        margin: 0;
-        border: none;
-      }
-
-      &:hover span {
-        border: 2px solid darken($nsf-yellow, 10%);
-        background: darken($nsf-yellow, 10%);
-      }
-
       div {
         margin: 10px 0;
 
@@ -460,14 +456,54 @@ button {
           border-bottom: 2px solid $nsf-yellow;
           font-weight: 500;
           color: #000;
-          font-size: 20px;
+          font-size: 1rem;
         }
+      }
+
+      &:hover {
+        margin: 0;
+        border: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover span {
+        border: 2px solid darken($nsf-yellow, 10%);
+        background: darken($nsf-yellow, 10%);
       }
     }
 
-    img {
-      height: 235px;
-      width: 235px;
+    @media screen and (min-width: $bp-md) {
+      max-width: 160px;
+
+      img {
+        height: 160px;
+        width: 160px;
+      }
+
+      a div span {
+        font-size: 1.25rem;
+      }
+    }
+
+    @media screen and (min-width: $bp-lg) {
+      max-width: 200px;
+
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
+
+    @media screen and (min-width: $bp-xl) {
+      max-width: 235px;
+
+      img {
+        height: 235px;
+        width: 235px;
+      }
     }
   }
 }
