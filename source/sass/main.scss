@@ -33,7 +33,12 @@ img {
 
 h1 {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 2rem;
+
+  @media screen and (min-width: $bp-sm) {
+    font-size: 2.75rem;
+  }
+
   margin: 16px auto 10px;
   width: 100%;
 }
@@ -58,7 +63,12 @@ header.page-header {
   background-color: #00a2af;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 600px;
+  min-height: 520px;
+
+  @media screen and (min-width: $bp-sm) {
+    min-height: 600px;
+  }
+
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -74,12 +84,16 @@ header.page-header {
 
   .header-content {
     p {
-      font-size: 19px;
+      font-size: 1rem;
       font-weight: 600;
       width: 100%;
       max-width: 900px;
       margin-left: auto;
       margin-right: auto;
+
+      @media screen and (min-width: $bp-sm) {
+        font-size: 1.2rem;
+      }
     }
   }
 
@@ -267,10 +281,33 @@ button {
   font-family: inherit;
 }
 
+.rules-regulations-page {
+  h1 {
+    a {
+      border-bottom: none;
+
+      &:hover {
+        border: none;
+        margin: 0;
+
+        span {
+          background: darken($nsf-yellow, 10%);
+        }
+      }
+    }
+  }
+}
+
+.rules-regulations-page,
 .nsf-page {
   .container {
-    margin-top: 85px;
-    margin-bottom: 85px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $bp-sm) {
+      margin-top: 85px;
+      margin-bottom: 85px;
+    }
   }
 
   a.btn,
@@ -278,20 +315,38 @@ button {
     height: 42px;
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
+    padding-right: 2.5rem;
     cursor: pointer;
     background: $nsf-yellow;
     font-weight: bold;
     border: none;
     color: $gray-darkest;
+    position: relative;
 
     &:focus {
       outline: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1.7rem;
+      height: 1.2rem;
+      font-size: 1rem;
+      background-image: url(../_images/icon-arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: 0.7rem 0.24rem;
+      transition: margin 0.3s;
     }
 
     &:hover {
       border: none;
       background: darken($nsf-yellow, 10%);
       color: $gray-darkest;
+
+      &::after {
+        margin-left: 0.2rem;
+      }
     }
   }
 
