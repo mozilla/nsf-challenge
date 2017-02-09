@@ -438,10 +438,6 @@ button {
   text-align: center;
 
   .event-container {
-    text-align: center;
-    max-width: 235px;
-    display: inline-block;
-
     a {
       &:hover {
         margin: 0;
@@ -463,11 +459,6 @@ button {
           font-size: 20px;
         }
       }
-    }
-
-    img {
-      height: 235px;
-      width: 235px;
     }
   }
 }

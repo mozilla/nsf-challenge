@@ -24,10 +24,33 @@ var StickyNav = React.createClass({
       active: window.location.hash.replace(`#`, ``) || ``
     };
   },
+  componentDidMount: function() {
+    document.addEventListener(`scroll`, this.onScroll);
+  },
+  componentWillUnmount: function() {
+    document.removeEventListener(`scroll`, this.onScroll);
+  },
+  onScroll: function() {
+    var active = `about`;
+    var scrollY = window.scrollY;
+    var events = document.querySelector(`#events`);
+    var details = document.querySelector(`#details`);
+
+    if (scrollY >= events.offsetTop) {
+      active = `events`;
+    }
+    if (scrollY >= details.offsetTop || (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      active = `details`;
+    }
+    this.activate(active);
+  },
   activate: function(active) {
-    this.setState({
-      active: active || ``
-    });
+    if (this.state.active !== active) {
+      window.history.pushState(null, null, `#` + active);
+      this.setState({
+        active: active || ``
+      });
+    }
   },
   getPosition: function() {
     if (!this.stickyContainer) {
