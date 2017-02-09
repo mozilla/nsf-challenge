@@ -52,7 +52,7 @@ var Panel = React.createClass({
 
     return (
       <div className={itemClassName}>
-        <div id={this.props.itemKey} className="nav-anchor"></div>
+        <div id={this.props.itemKey} className="nav-offset"></div>
         <div onClick={this.onClick} className="expander-header">{this.props.header}</div>
         <div ref={(element) => { this.container = element; }} className="expander-content">
           <div className="content-height" ref={(element) => { this.content = element; }}>

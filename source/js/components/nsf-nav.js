@@ -32,8 +32,13 @@ var MenuLinks = React.createClass({
   },
   onScroll: function() {
     var links = this.state.links || [];
+    var hash = window.location.hash.replace(`#`, ``);
     var active = links[0] || ``;
     var scrollY = window.scrollY;
+
+    if (hash && !document.querySelector(`.nav-anchor#` + hash)) {
+      return;
+    }
 
     links.forEach((element) => {
       if (scrollY >= element.offsetTop) {

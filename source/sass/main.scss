@@ -165,11 +165,9 @@ header.page-header {
   }
 }
 
-.nav-anchor {
-  &.nav-offset {
-    height: 50px;
-    margin-top: -50px;
-  }
+.nav-offset {
+  height: 50px;
+  margin-top: -50px;
 }
 
 .expander {

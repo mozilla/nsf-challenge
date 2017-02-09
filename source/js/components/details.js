@@ -43,6 +43,8 @@ var Details = React.createClass({
 
     if (key) {
       hash = `#` + key;
+    } else {
+      hash = `#details`;
     }
     history.replaceState({}, ``, window.location.origin + window.location.pathname + window.location.search + hash);
     this.updateKey(key);
