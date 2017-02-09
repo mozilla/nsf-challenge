@@ -135,10 +135,15 @@ header.page-header {
       text-align: center;
 
       a {
+        display: inline-block;
         border: none;
         color: $gray;
         padding: 0 23px;
         font-weight: 500;
+
+        &::first-letter {
+          text-transform: capitalize;
+        }
 
         &:hover {
           background: none;
@@ -161,8 +166,10 @@ header.page-header {
 }
 
 .nav-anchor {
-  height: 50px;
-  margin-top: -50px;
+  &.nav-offset {
+    height: 50px;
+    margin-top: -50px;
+  }
 }
 
 .expander {
