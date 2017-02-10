@@ -1,23 +1,20 @@
-doctype html
-html
-  head
-    meta(http-equiv=`Content-Security-Policy`, content=`default-src 'none'; connect-src ws://127.0.0.1:2017; font-src https://code.cdn.mozilla.net; img-src 'self' data:; script-src 'self' 'sha256-iN7wpJdxHlpujRppkOA8N0+Mzp0ZqZr3lCtxM00Y63c='; style-src 'self' https://code.cdn.mozilla.net;`)
-    meta(charset=`utf-8`)
+head
+  meta(http-equiv=`Content-Security-Policy`, content=`default-src 'none'; connect-src ws://127.0.0.1:2017; font-src https://code.cdn.mozilla.net; img-src 'self' data:; script-src 'self' 'sha256-iN7wpJdxHlpujRppkOA8N0+Mzp0ZqZr3lCtxM00Y63c='; style-src 'self' https://code.cdn.mozilla.net;`)
+  meta(charset=`utf-8`)
 
-    meta(name=`viewport`, content=`width=device-width, initial-scale=1`)
-    meta(name=`description`, content=`TODO`)
+  meta(name=`viewport`, content=`width=device-width, initial-scale=1`)
+  meta(name=`description`, content=`TODO`)
 
-    meta(property=`og:type`, content=`website`)
-    meta(property=`og:site_name`, content=`TODO`)
-    meta(property=`og:locale`, content=`en_US`)
-    meta(property=`og:url`, content=`TODO`)
-    meta(property=`og:image`, content=`TODO`)
-    meta(property=`og:title`, content=`TODO`)
-    meta(property=`og:description`, content=`TODO`)
+  meta(property=`og:type`, content=`website`)
+  meta(property=`og:site_name`, content=`TODO`)
+  meta(property=`og:locale`, content=`en_US`)
+  meta(property=`og:url`, content=`TODO`)
+  meta(property=`og:image`, content=`TODO`)
+  meta(property=`og:title`, content=`TODO`)
+  meta(property=`og:description`, content=`TODO`)
 
-    link(rel=`stylesheet`, href=`${env.virtualRoot}_css/main.compiled.css`)
-    link(rel=`stylesheet`, href=`https://code.cdn.mozilla.net/fonts/fira.css`)
-    link(rel=`icon`, href=`${env.virtualRoot}_images/favicon.png`)
+  link(rel=`stylesheet`, href=`${env.virtualRoot}_css/main.compiled.css`)
+  link(rel=`stylesheet`, href=`https://code.cdn.mozilla.net/fonts/fira.css`)
+  link(rel=`icon`, href=`${env.virtualRoot}_images/favicon.png`)
 
-    title=`NSF`
-  body(id=`view-${templateID}`)
+  title=`NSF`

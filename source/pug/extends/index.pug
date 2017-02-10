@@ -1,0 +1,8 @@
+doctype html
+html
+  include ../partials/header.pug
+  body(id=`view-${templateID}`)
+    block content
+
+    include ../partials/footer.pug
+    script(src=`${env.virtualRoot}_js/main.compiled.js`)
