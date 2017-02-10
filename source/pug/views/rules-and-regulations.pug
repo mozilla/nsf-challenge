@@ -1,13 +1,12 @@
-include ../partials/header.pug
+extends ../extends/index.pug
 
-.rules-regulations-page
-  .rules-and-regulations.container
-    h1.text-center
-      a(href=`${env.virtualRoot}`)
-        span Wireless Innovation
-        br
-        span for a Networked Society Initiative
-    h2.text-center Rules and Regulations
-    include:markdown ../../markdown/rules-and-regulations.md
-
-include ../partials/footer.pug
+block content
+  .rules-regulations-page
+    .rules-and-regulations.container
+      h1.text-center
+        a(href=`${env.virtualRoot}`)
+          span Wireless Innovation
+          br
+          span for a Networked Society Initiative
+      h2.text-center Rules and Regulations
+      include:markdown ../../markdown/rules-and-regulations.md
