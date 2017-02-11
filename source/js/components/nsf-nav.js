@@ -30,29 +30,46 @@ var MenuLinks = React.createClass({
   componentWillUnmount: function() {
     document.removeEventListener(`scroll`, this.onScroll);
   },
+  checkForValidHash: function(hash) {
+    // We can accept no hash as a cleared state.
+    if (!hash) {
+      return true;
+    }
+  },
   onScroll: function() {
     var links = this.state.links || [];
     var hash = window.location.hash.replace(`#`, ``);
-    var active = links[0] || ``;
+    var active = ``;
     var scrollY = window.scrollY;
 
-    if (hash && !document.querySelector(`.nav-anchor#` + hash)) {
-      return;
+    if (links[0]) {
+      active = links[0].getAttribute(`id`);
     }
 
-    links.forEach((element) => {
-      if (scrollY >= element.offsetTop) {
-        active = element;
+    // If we have no hash, we should set it to the top nav.
+    // We can stop checking.
+    if (hash) {
+
+      // If the current url hash is for something other than a nav item, we can stop now.
+      if (!document.querySelector(`.nav-anchor#` + hash)) {
+        return;
       }
-    });
 
-    // If we're at the bottom of the page, ensure the last item is active.
-    // This is in case the last item's height is less than the window height.
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-      active = links[links.length-1];
+      // Check to see which is the current nav item.
+      links.forEach((element) => {
+        if (scrollY >= element.offsetTop) {
+          active = element.getAttribute(`id`);
+        }
+      });
+
+      // If we're at the bottom of the page, ensure the last item is active.
+      // This is in case the last item's height is less than the window height.
+      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        active = links[links.length-1].getAttribute(`id`);
+      }
     }
 
-    this.activate(active.getAttribute(`id`));
+    this.activate(active);
   },
   activate: function(active) {
     if (this.state.active !== active) {

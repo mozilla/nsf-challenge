@@ -40,11 +40,12 @@ var Details = React.createClass({
   },
   updateHash: function(key) {
     var hash = ``;
+    var activeLink = document.querySelector(`.menu-link.active`);
 
     if (key) {
       hash = `#` + key;
-    } else {
-      hash = `#details`;
+    } else if (activeLink) {
+      hash = activeLink.getAttribute(`href`);
     }
     history.replaceState({}, ``, window.location.origin + window.location.pathname + window.location.search + hash);
     this.updateKey(key);
