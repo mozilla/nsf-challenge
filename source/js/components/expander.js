@@ -18,10 +18,11 @@ var Panel = React.createClass({
     activeKey: React.PropTypes.string.isRequired,
     header: React.PropTypes.string.isRequired
   },
-  onClick: function() {
+  onClick: function(e) {
     var itemKey = this.props.itemKey;
 
     if (itemKey === this.props.activeKey) {
+      e.preventDefault();
       itemKey = ``;
     }
     this.props.activateKey(itemKey);
@@ -53,7 +54,7 @@ var Panel = React.createClass({
     return (
       <div className={itemClassName}>
         <div id={this.props.itemKey} className="nav-offset"></div>
-        <div onClick={this.onClick} className="expander-header">{this.props.header}</div>
+        <a href={`#` + this.props.itemKey} onClick={this.onClick} className="expander-header">{this.props.header}</a>
         <div ref={(element) => { this.container = element; }} className="expander-content">
           <div className="content-height" ref={(element) => { this.content = element; }}>
             {this.props.children}

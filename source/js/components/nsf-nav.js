@@ -19,22 +19,17 @@ var MenuLink = React.createClass({
 
 var MenuLinks = React.createClass({
   getInitialState: function() {
-    return {
-      active: window.location.hash.replace(`#`, ``) || ``,
-      links: [].slice.call(document.querySelectorAll(`.nav-anchor`))
-    };
+    var links = [].slice.call(document.querySelectorAll(`.nav-anchor`));
+    var active = window.location.hash.replace(`#`, ``) || ``;
+
+    return {active, links};
   },
   componentDidMount: function() {
+    this.onScroll();
     document.addEventListener(`scroll`, this.onScroll);
   },
   componentWillUnmount: function() {
     document.removeEventListener(`scroll`, this.onScroll);
-  },
-  checkForValidHash: function(hash) {
-    // We can accept no hash as a cleared state.
-    if (!hash) {
-      return true;
-    }
   },
   onScroll: function() {
     var links = this.state.links || [];
@@ -50,14 +45,9 @@ var MenuLinks = React.createClass({
     // We can stop checking.
     if (hash) {
 
-      // If the current url hash is for something other than a nav item, we can stop now.
-      if (!document.querySelector(`.nav-anchor#` + hash)) {
-        return;
-      }
-
       // Check to see which is the current nav item.
       links.forEach((element) => {
-        if (scrollY >= element.offsetTop) {
+        if (scrollY >= element.offsetTop - ( window.innerHeight / 2 )) {
           active = element.getAttribute(`id`);
         }
       });
@@ -72,8 +62,12 @@ var MenuLinks = React.createClass({
     this.activate(active);
   },
   activate: function(active) {
+    var hash = window.location.hash.replace(`#`, ``);
+
     if (this.state.active !== active) {
-      window.history.replaceState({}, null, `#` + active);
+      if (!hash || document.querySelector(`.nav-anchor#` + hash)) {
+        window.history.replaceState({}, null, `#` + active);
+      }
       this.setState({
         active: active || ``
       });

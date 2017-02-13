@@ -66,7 +66,9 @@ var Details = React.createClass({
           items.map((item, index) => {
             return (
               <Panel key={index} activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey={`item-` + index} header={item.header}>
-                <ReactMarkdown source={item.source}/>
+                <div className="markdown">
+                  <ReactMarkdown source={item.source}/>
+                </div>
               </Panel>
             );
           })
