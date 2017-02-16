@@ -1,14 +1,14 @@
 #### Challenge 1: Off-the-Grid Internet Challenge
 
-When disasters like earthquakes, tsunamis and hurricanes strike, communications networks are often among the first pieces of critical infrastructure to become overloaded or fail. The Off-the-Grid Internet Challenge seeks projects that answer the following question: how might we provide access to critical networking and communications services in the immediate aftermath of a disaster?
+**What wireless solutions can be rapidly deployed in post-disaster situations where internet access is unavailable or compromised?**
 
-Projects which address this Challenge should be portable and provide access via a wireless network to common portable devices (i.e. smartphones, tablets and laptops). In addition to network access, projects should provide access to applications that would be useful in a disaster situation (for example, social networking, messaging services, directory services, voice calling and access to knowledge databases). Projects do not necessarily need to provide access to the internet, provided that users can access information and services via the network.
+When disasters like earthquakes, tsunamis and hurricanes strike, communications networks are often among the first pieces of critical infrastructure to become overloaded or fail. The **Off-the-Grid Internet Challenge** seeks projects that answer the following question: how might individuals within a community maintain access to critical information services in the immediate aftermath of a disaster (for example: social networking and messaging services, maps, voice calling and apps that connect users with medical or emergency personnel and resources)?
 
-In addition to the general [judging criteria], projects submitted to the Off-the-Grid Internet Challenge will be judged based on the following technical criteria:
+Projects that address this Challenge should be portable and provide the means, via a wireless network, for common portable devices (e.g., smartphones, tablets and laptops) to access applications that would be useful in a disaster situation. Applicants to the Off-the-Grid Internet Challenge will be expected to design the means by which to access the wireless network (e.g. hardware) as well as the applications that will be provided on top of that network (e.g. software). Access to traditional networks that connect to the internet should not be presumed or factored into the design (e.g. users should be able to access information and services only via the off-the-grid wireless network).
 
-- **Portability:** How portable is the solution? 
+In addition to the general judging criteria, projects submitted to the Off-the-Grid internet Challenge will be judged based on the following technical criteria:
+
+- **Portability:** How portable is the solution?
 - **Power:** Can the solution be powered, for hours or days, off of a portable power source?
-- **Access:** Can the solution provide access to at least a dozen users, within a minimum radius of 250 meters?
+- **Access:** How many users can the solution support and at what distances?
 - **Applications:** What apps does the solution provide access to? Are these apps designed in such a way that maximizes usability for the intended users?
-
-
