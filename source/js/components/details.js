@@ -18,12 +18,9 @@ var items = [
     header: `Judging and awards`
   }, {
     source: require(`../../markdown/details/item-5.md`),
-    header: `Information on teams`
-  }, {
-    source: require(`../../markdown/details/item-6.md`),
     header: `FAQ`
   }, {
-    source: require(`../../markdown/details/item-7.md`),
+    source: require(`../../markdown/details/item-6.md`),
     header: `Getting Started`
   }
 ];
