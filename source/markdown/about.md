@@ -2,4 +2,4 @@
 
 **Off-the-Grid Internet Challenge:** How can we quickly provide access to communications and resources immediately after a major disaster? What sorts of applications will be most useful to victims in the immediate aftermath of a disaster?
 
-**Smart Community Networks Challenge:** How can we leverage existing infrastructure to create community wireless networks, esspecially in areas where there is a need for greater connectivity?
+**Smart Community Networks Challenge:** How can we leverage existing infrastructure to create community wireless networks, especially in areas where there is a need for greater connectivity?
