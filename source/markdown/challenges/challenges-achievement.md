@@ -1,1 +1,1 @@
-**Creativity:** How does the proposed solution differ from or improve upon existing solutions? What is innovative or novel about the proposed concept or technology? 
+**Technical Achievement:** What are the technical capabilities of the idea or prototype? How many people could the idea/prototype impact and in an area of what size?

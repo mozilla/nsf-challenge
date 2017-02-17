@@ -1,1 +1,1 @@
-**Affordability:** How affordably could the idea/prototype be implemented in a real community?
+**Creativity:** How does the proposed solution differ from or improve upon existing solutions? What is innovative or novel about the proposed concept or technology?
