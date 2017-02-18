@@ -7,4 +7,4 @@ Entrants who are notified that they have passed the Design Concept Stage will be
 
 ##### Judging Criteria
 
-All submissions will be judged based on the following criteria:
+Submissions will be accepted beginning in June 2017; the deadline for submission to the Design Concept Stage will be in October. All submissions will be judged based on the following criteria:
