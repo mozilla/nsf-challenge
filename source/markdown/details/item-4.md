@@ -4,14 +4,14 @@ The following awards will be provided for each of the two Challenges:
 
 **Design Concept Stage**
 
-$60,000 – First Place
-$40,000 - Second Place
-$30,000 - Third Place
-$10,000 - 7 Honorable Mention Awards
+- $60,000 – First Place
+- $40,000 - Second Place
+- $30,000 - Third Place
+- $10,000 - 7 Honorable Mention Awards
 
 **Working Prototype Stage**
 
-$400,000 – First Place
-$250,000 – Second Place
-$100,000 – Third Place
-$50,000 - Fourth Place
+- $400,000 – First Place
+- $250,000 – Second Place
+- $100,000 – Third Place
+- $50,000 - Fourth Place
