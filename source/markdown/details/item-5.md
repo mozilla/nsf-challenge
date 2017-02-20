@@ -1,4 +1,4 @@
-For answers to questions not listed here, please [visit our Discourse forum](https://forum.learning.mozilla.org/c/nsf-wins) or email [wirelesschallenge@mozillafoundation.org](wirelesschallenge@mozillafoundation.org).
+For answers to questions not listed here, please [visit our Discourse forum](https://forum.learning.mozilla.org/c/nsf-wins) or email [wirelesschallenge@mozillafoundation.org](mailto:wirelesschallenge@mozillafoundation.org).
 
 **Who CANNOT enter the Challenges?**
 
