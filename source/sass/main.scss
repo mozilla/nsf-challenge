@@ -407,7 +407,7 @@ button {
     .info-box {
       margin-top: 1.5rem;
 
-      &:not(:first-child) {
+      &:first-child {
         margin-bottom: 1.5rem;
       }
 
@@ -417,7 +417,7 @@ button {
         font-weight: 500;
 
         @media screen and (min-width: $bp-md) {
-          max-width: 340px;
+          max-width: 550px;
           margin: 0 auto;
         }
       }
