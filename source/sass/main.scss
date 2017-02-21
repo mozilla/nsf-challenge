@@ -449,6 +449,12 @@ button {
   }
 }
 
+footer.mofo-footer {
+  a {
+    color: #fff;
+  }
+}
+
 .footer-link-cookies::before {
   background-image: url(../_images/icon-cookies.svg);
 }
