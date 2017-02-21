@@ -31,12 +31,33 @@ var Details = React.createClass({
       activeKey: ``
     };
   },
-  onKeyChange: function(key) {
-    if (key !== this.state.activeKey) {
+  updateKey: function(newActiveKey) {
+    if (newActiveKey !== this.state.activeKey) {
       this.setState({
-        activeKey: key
+        activeKey: newActiveKey
       });
     }
+  },
+  updateHash: function(key) {
+    var hash = ``;
+    var activeLink = document.querySelector(`.menu-link.active`);
+
+    if (key) {
+      hash = `#` + key;
+    } else if (activeLink) {
+      hash = activeLink.getAttribute(`href`);
+    }
+    history.replaceState({}, ``, window.location.origin + window.location.pathname + window.location.search + hash);
+    this.updateKey(key);
+  },
+  componentDidUpdate: function() {
+    this.updateKey(window.location.hash.replace(`#`, ``));
+  },
+  componentDidMount: function() {
+    this.updateKey(window.location.hash.replace(`#`, ``));
+  },
+  onKeyChange: function(key) {
+    this.updateHash(key);
   },
   render: function() {
     return (
@@ -45,7 +66,9 @@ var Details = React.createClass({
           items.map((item, index) => {
             return (
               <Panel key={index} activeKey={this.state.activeKey} activateKey={this.onKeyChange} itemKey={`item-` + index} header={item.header}>
-                <ReactMarkdown source={item.source}/>
+                <div className="markdown">
+                  <ReactMarkdown source={item.source}/>
+                </div>
               </Panel>
             );
           })

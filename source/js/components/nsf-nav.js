@@ -19,12 +19,13 @@ var MenuLink = React.createClass({
 
 var MenuLinks = React.createClass({
   getInitialState: function() {
-    return {
-      active: window.location.hash.replace(`#`, ``) || ``,
-      links: [].slice.call(document.querySelectorAll(`.nav-anchor`))
-    };
+    var links = [].slice.call(document.querySelectorAll(`.nav-anchor`));
+    var active = window.location.hash.replace(`#`, ``) || ``;
+
+    return {active, links};
   },
   componentDidMount: function() {
+    this.onScroll();
     document.addEventListener(`scroll`, this.onScroll);
   },
   componentWillUnmount: function() {
@@ -32,26 +33,41 @@ var MenuLinks = React.createClass({
   },
   onScroll: function() {
     var links = this.state.links || [];
-    var active = links[0] || ``;
+    var hash = window.location.hash.replace(`#`, ``);
+    var active = ``;
     var scrollY = window.scrollY;
 
-    links.forEach((element) => {
-      if (scrollY >= element.offsetTop) {
-        active = element;
-      }
-    });
-
-    // If we're at the bottom of the page, ensure the last item is active.
-    // This is in case the last item's height is less than the window height.
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
-      active = links[links.length-1];
+    if (links[0]) {
+      active = links[0].getAttribute(`id`);
     }
 
-    this.activate(active.getAttribute(`id`));
+    // If we have no hash, we should set it to the top nav.
+    // We can stop checking.
+    if (hash) {
+
+      // Check to see which is the current nav item.
+      links.forEach((element) => {
+        if (scrollY >= element.offsetTop - ( window.innerHeight / 2 )) {
+          active = element.getAttribute(`id`);
+        }
+      });
+
+      // If we're at the bottom of the page, ensure the last item is active.
+      // This is in case the last item's height is less than the window height.
+      if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        active = links[links.length-1].getAttribute(`id`);
+      }
+    }
+
+    this.activate(active);
   },
   activate: function(active) {
+    var hash = window.location.hash.replace(`#`, ``);
+
     if (this.state.active !== active) {
-      window.history.replaceState({}, null, `#` + active);
+      if (!hash || document.querySelector(`.nav-anchor#` + hash)) {
+        window.history.replaceState({}, null, `#` + active);
+      }
       this.setState({
         active: active || ``
       });

@@ -136,18 +136,12 @@ header.page-header {
 
       a {
         display: inline-block;
-        border: none;
         color: $gray;
         padding: 0 23px;
         font-weight: 500;
 
         &::first-letter {
           text-transform: capitalize;
-        }
-
-        &:hover {
-          background: none;
-          margin: 0;
         }
 
         &.active,
@@ -165,11 +159,9 @@ header.page-header {
   }
 }
 
-.nav-anchor {
-  &.nav-offset {
-    height: 50px;
-    margin-top: -50px;
-  }
+.nav-offset {
+  height: 50px;
+  margin-top: -50px;
 }
 
 .expander {
@@ -183,37 +175,43 @@ header.page-header {
 }
 
 .expander > .expander-item > .expander-header {
-  line-height: 32px;
-  padding: 10px 0;
+  line-height: 28px;
+  padding: 16px 0;
   cursor: pointer;
   position: relative;
-  font-size: 20px;
+  font-size: 1.4rem;
+  font-weight: 400;
 }
 
 .expander > .expander-item > .expander-header::after {
   content: '+';
   color: $nsf-purple;
-  font-size: 68px;
-  font-weight: 200;
   right: 0;
-  width: 48px;
   text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  width: 28px;
+  height: 28px;
+  padding-top: 2px;
 }
 
 .expander > .expander-item-active > .expander-header::after {
-  content: '_';
-  margin-top: -45px;
-  font-size: 52px;
+  content: '-';
+}
+
+.expander > .expander-item-active > .expander-content {
+  transition: height 0.3s;
 }
 
 .expander-content {
   overflow: hidden;
   height: 0;
-  transition: height 0.3s;
 
   .content-height {
     display: inline-block;
   }
+
+  transition: height 0s;
 }
 
 .expander-item:last-child {
@@ -231,7 +229,9 @@ header.page-header {
     margin-bottom: 62px;
     border-bottom: solid 1px $nsf-purple;
 
-    .challenges-button {
+    .challenge-button-container {
+      display: inline-block;
+
       @media screen and (max-width: $bp-sm) {
         padding-right: 4px;
         padding-left: 4px;
@@ -251,21 +251,29 @@ header.page-header {
         width: calc(50% - 14px);
       }
 
-      font-size: 22px;
-      font-weight: 200;
-      cursor: pointer;
-      margin-bottom: -1px;
-      min-height: 50px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: $nsf-purple;
-      border-color: $nsf-purple;
-      border-width: 1px 1px 0;
-      border-style: solid;
+      .challenges-button {
+        width: 100%;
+        font-size: 22px;
+        font-weight: 200;
+        cursor: pointer;
+        margin-bottom: -1px;
+        min-height: 50px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: $nsf-purple;
+        border-color: $nsf-purple;
+        border-width: 1px 1px 0;
+        border-style: solid;
 
-      &.active {
-        background: #fff;
+        &:hover {
+          margin-right: 0;
+          margin-left: 0;
+        }
+
+        &.active {
+          background: #fff;
+        }
       }
     }
   }
@@ -281,7 +289,8 @@ header.page-header {
   min-width: 6rem;
 }
 
-a.btn,
+a,
+a,
 .btn,
 button {
   &:focus {
@@ -330,13 +339,8 @@ button {
     cursor: pointer;
     background: $nsf-yellow;
     font-weight: bold;
-    border: none;
     color: $gray-darkest;
     position: relative;
-
-    &:focus {
-      outline: none;
-    }
 
     &::after {
       content: '';
@@ -351,7 +355,6 @@ button {
     }
 
     &:hover {
-      border: none;
       background: darken($nsf-yellow, 10%);
       color: $gray-darkest;
 
@@ -426,17 +429,22 @@ button {
   }
 
   a {
-    border-bottom: 2px solid $nsf-yellow;
     text-decoration: none;
     color: inherit;
+  }
 
-    &:hover {
-      border: 2px solid darken($nsf-yellow, 10%);
-      box-decoration-break: clone;
-      background: darken($nsf-yellow, 10%);
-      text-decoration: none;
-      margin: 0 -2px;
-      color: #000;
+  .markdown,
+  .page-header p {
+    a {
+      border-bottom: 2px solid $nsf-yellow;
+
+      &:hover {
+        border: 2px solid darken($nsf-yellow, 10%);
+        box-decoration-break: clone;
+        background: darken($nsf-yellow, 10%);
+        margin: 0 -2px;
+        color: #000;
+      }
     }
   }
 }
