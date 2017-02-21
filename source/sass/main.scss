@@ -432,6 +432,7 @@ button {
 
     &:hover {
       border: 2px solid darken($nsf-yellow, 10%);
+      box-decoration-break: clone;
       background: darken($nsf-yellow, 10%);
       text-decoration: none;
       margin: 0 -2px;
@@ -456,8 +457,13 @@ button {
       }
 
       &:hover span {
+        box-decoration-break: clone;
         border: 2px solid darken($nsf-yellow, 10%);
         background: darken($nsf-yellow, 10%);
+      }
+
+      &:focus {
+        outline: none;
       }
 
       div {
@@ -467,7 +473,11 @@ button {
           border-bottom: 2px solid $nsf-yellow;
           font-weight: 500;
           color: #000;
-          font-size: 20px;
+          font-size: 1rem;
+
+          @media screen and (min-width: $bp-md) {
+            font-size: 1.25rem;
+          }
         }
       }
     }
