@@ -6,7 +6,7 @@ import ReactMarkdown from "react-markdown";
 var items = [
   {
     source: require(`../../markdown/details/item-1.md`),
-    header: `Who can enter the challenges`
+    header: `Who can enter the Challenges`
   }, {
     source: require(`../../markdown/details/item-2.md`),
     header: `What to submit`
@@ -21,7 +21,7 @@ var items = [
     header: `FAQ`
   }, {
     source: require(`../../markdown/details/item-6.md`),
-    header: `Getting Started`
+    header: `Getting started`
   }
 ];
 
