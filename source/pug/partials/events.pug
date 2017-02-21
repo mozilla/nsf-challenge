@@ -1,37 +1,41 @@
 #events.nav-anchor.nav-offset
 .section-header
   .container
-    h4 Launch events
+    .row.justify-content-center
+      .col-lg-10
+        h4 Launch events
 
 .container
-  .markdown
-    include:markdown ../../markdown/events.md
-  .events.row
-    .event-container.col-md-3.col-sm-6.col-6
-      a(href='#')
-        img(src=`${env.virtualRoot}_images/raleigh.jpg`)
-        div
-          span March 25th, 2017
-        div
-          span Raleigh, NC
-    .event-container.col-md-3.col-sm-6.col-6
-      a(href='#')
-        img(src=`${env.virtualRoot}_images/oakland.jpg`)
-        div
-          span April 8th, 2017
-        div
-          span Oakland, CA
-    .event-container.col-md-3.col-sm-6.col-6
-      a(href='#')
-        img(src=`${env.virtualRoot}_images/colorado.jpg`)
-        div
-          span April 15th, 2017
-        div
-          span Boulder, CO
-    .event-container.col-md-3.col-sm-6.col-6
-      a(href='#')
-        img(src=`${env.virtualRoot}_images/newyork.jpg`)
-        div
-          span April 22nd, 2017
-        div
-          span New York, NY
+  .row.justify-content-center
+    .col-lg-10
+      .markdown
+        include:markdown ../../markdown/events.md
+      .events.row
+        .event-container.col-md-3.col-sm-6.col-6
+          a(href='#')
+            img(src=`${env.virtualRoot}_images/raleigh.jpg`)
+            div
+              span March 25th, 2017
+            div
+              span Raleigh, NC
+        .event-container.col-md-3.col-sm-6.col-6
+          a(href='#')
+            img(src=`${env.virtualRoot}_images/oakland.jpg`)
+            div
+              span April 8th, 2017
+            div
+              span Oakland, CA
+        .event-container.col-md-3.col-sm-6.col-6
+          a(href='#')
+            img(src=`${env.virtualRoot}_images/colorado.jpg`)
+            div
+              span April 15th, 2017
+            div
+              span Boulder, CO
+        .event-container.col-md-3.col-sm-6.col-6
+          a(href='#')
+            img(src=`${env.virtualRoot}_images/newyork.jpg`)
+            div
+              span April 22nd, 2017
+            div
+              span New York, NY
