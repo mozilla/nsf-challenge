@@ -31,7 +31,3 @@ Only complete solutions will be considered for awards. Entrants working on indiv
 **Are the Challenges open to tools (e.g. a toolkit for building community wireless networks), applications of tools (e.g. an existing community wireless network in a real community) or both?**
 
 Both types of projects will be considered for awards, provided that they address the challenge criteria.
-
-**If I submit confidential or proprietary information to the Challenges, will Mozilla honor the confidentiality of that information?**
-
-Judges for the Challenges will be required to sign confidentiality agreements, which will preclude them from disclosing any confidential information they review as part of the judging process.
