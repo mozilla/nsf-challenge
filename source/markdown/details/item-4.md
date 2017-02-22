@@ -1,4 +1,4 @@
-A panel of experts, drawn from academic, non-profit and for-profit organizations working in the fields of technology, research and community engagement, will select winners for each of the two stages of the competition. Finalists during the Working Prototype Stage may be required to provide live demos, either for judges or a public audience.
+With NSF’s input, Mozilla will select a panel of experts, drawn from academic, non-profit and for-profit organizations working in the fields of technology, research and community activism, to select winners for each of the two stages of the competition. Finalists during the Working Prototype Stage may be required to provide live demos, either for judges or a public audience.
 
 The following awards will be provided for each of the two Challenges:
 
