@@ -25,7 +25,6 @@ var MenuLinks = React.createClass({
     return {active, links};
   },
   componentDidMount: function() {
-    this.onScroll();
     document.addEventListener(`scroll`, this.onScroll);
   },
   componentWillUnmount: function() {
