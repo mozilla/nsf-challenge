@@ -371,6 +371,7 @@ button {
     align-items: center;
 
     img {
+      flex-shrink: 0;
       margin-right: 30px;
       height: 40px;
       width: 40px;
