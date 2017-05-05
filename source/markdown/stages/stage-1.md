@@ -9,6 +9,6 @@ $30,000 - Third Place
 $10,000 - 7 Honorable Mention Awards  
 
 **Documentation might include:**  
-+ Mockups and wireframes
-+ Hardware and network diagrams
-+ Written documentation
++ Mockups and wireframes  
++ Hardware and network diagrams  
++ Written documentation  
