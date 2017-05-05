@@ -1,0 +1,1 @@
+Entrants are not expected to use real city infrastructure in their prototypes. The use of municipal infrastructure is subject to federal, state and local laws, and the discretion of individual entrants.

@@ -1,0 +1,69 @@
+#submissions.nav-anchor.nav-offset
+.section-header
+  .container
+    .row.justify-content-center
+      .col-lg-10
+        h4 Submissions
+
+.container
+  .row.justify-content-center
+    .col-lg-10
+      .markdown
+        include:markdown ../../markdown/submissions/submissions.md
+
+.container
+  .row.justify-content-center
+    .col-lg-10.desktop-timeline
+      img(src=`${env.virtualRoot}_images/NSF-Timeline-desktop.png`)
+    .col-lg-10.mobile-timeline
+      img(src=`${env.virtualRoot}_images/NSF-Timeline-mobile.png`)
+
+.container
+  .row.justify-content-center
+    .col-lg-5
+      .stage
+        .stage-header Design Concept Stage (Stage 1)
+        .stage-body
+          include:markdown ../../markdown/stages/stage-1.md
+    .col-lg-5
+      .stage
+        .stage-header Working Prototype Stage (Stage 2)
+        .stage-body
+          include:markdown ../../markdown/stages/stage-2.md
+    .col-lg-10
+      .markdown
+        include:markdown ../../markdown/stages/post-stage.md
+
+.container
+  .row.justify-content-center
+    .col-lg-10
+      .markdown
+        include:markdown ../../markdown/submissions/criteria.md
+      .challenge-list-item
+        img(src=`${env.virtualRoot}_images/icon-technical.svg` height=`40` width=`40`)
+        .markdown
+          include:markdown ../../markdown/submissions/submissions-feasibility.md
+      .challenge-list-item
+        img(src=`${env.virtualRoot}_images/icon-differentiation.svg` height=`40` width=`40`)
+        .markdown
+          include:markdown ../../markdown/submissions/submissions-differentiation.md
+      .challenge-list-item
+        img(src=`${env.virtualRoot}_images/icon-affordability.svg` height=`40` width=`40`)
+        .markdown
+          include:markdown ../../markdown/submissions/submissions-affordability.md
+      .challenge-list-item
+        img(src=`${env.virtualRoot}_images/icon-impact.svg` height=`40` width=`40`)
+        .markdown
+          include:markdown ../../markdown/submissions/submissions-impact.md
+      .challenge-list-item
+        img(src=`${env.virtualRoot}_images/icon-scalability.svg` height=`40` width=`40`)
+        .markdown
+          include:markdown ../../markdown/submissions/submissions-scalability.md
+      .markdown
+        include:markdown ../../markdown/submissions/post-criteria.md
+
+.container
+  .row.justify-content-center
+    .col-lg-10
+      .markdown
+        include:markdown ../../markdown/submissions/how-to-submit.md

@@ -1,0 +1,1 @@
+Judges for the Challenges will be required to sign confidentiality agreements with Mozilla, which will preclude them from disclosing any confidential information they review as part of the judging process.
