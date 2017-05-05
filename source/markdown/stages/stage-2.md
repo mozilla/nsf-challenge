@@ -8,7 +8,7 @@ $250,000 – Second Place
 $100,000 – Third Place  
 $50,000 - Fourth Place  
 
-**Documentation might include:**
+**Documentation might include:**  
 + Network test data  
 + Video demos  
 + Photographic documentation  

@@ -21,6 +21,12 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  color: #000;
+  font-size: 16px;
+
+  @media screen and (min-width: $bp-sm) {
+    font-size: 18px;
+  }
 }
 
 img {
@@ -63,12 +69,6 @@ header.page-header {
   background-color: #00a2af;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 520px;
-
-  @media screen and (min-width: $bp-sm) {
-    min-height: 600px;
-  }
-
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -76,10 +76,6 @@ header.page-header {
   h1,
   .header-content {
     color: #fff;
-  }
-
-  h1 {
-    max-width: 620px;
   }
 
   .header-content {
@@ -166,8 +162,12 @@ header.page-header {
       a {
         display: inline-block;
         color: $gray;
-        padding: 0 23px;
+        padding: 0 5px;
         font-weight: 500;
+
+        @media screen and (min-width: $bp-sm) {
+          padding: 0 23px;
+        }
 
         &::first-letter {
           text-transform: capitalize;
@@ -196,8 +196,6 @@ header.page-header {
 
 .expander {
   border-width: 0;
-  font-weight: 300;
-  color: $gray-darker;
 }
 
 .expander > .expander-item {
@@ -284,7 +282,7 @@ header.page-header {
       .challenges-button {
         width: 100%;
         font-size: 22px;
-        font-weight: 200;
+        font-weight: 500;
         cursor: pointer;
         margin-bottom: -1px;
         min-height: 50px;
@@ -375,12 +373,12 @@ button {
 .rules-regulations-page,
 .nsf-page {
   .container {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
     @media screen and (min-width: $bp-sm) {
-      margin-top: 85px;
-      margin-bottom: 85px;
+      margin-top: 65px;
+      margin-bottom: 65px;
     }
   }
 
@@ -462,23 +460,32 @@ button {
     .info-box {
       margin-top: 1.5rem;
 
+      .btn {
+        margin-top: 15px;
+      }
+
+      @media screen and (min-width: $bp-md) {
+        .btn {
+          margin-top: 0;
+        }
+
+        display: flex;
+        align-items: center;
+      }
+
       &:first-child {
         margin-bottom: 1.5rem;
       }
 
       header {
         color: $black;
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 500;
 
         @media screen and (min-width: $bp-md) {
           max-width: 550px;
           margin: 0 auto;
         }
-      }
-
-      .btn {
-        margin-top: 15px;
       }
     }
   }
@@ -508,6 +515,8 @@ footer.mofo-footer {
   a {
     color: #fff;
   }
+
+  background: #000;
 }
 
 .footer-link-cookies::before {

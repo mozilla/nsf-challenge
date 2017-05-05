@@ -4,4 +4,4 @@
 
 The Off-the-Grid Internet Challenge seeks solutions that can provide connectivity in one of the most challenging situations: the immediate aftermath of a major disaster. When disasters like earthquakes, tsunamis and hurricanes strike, communications networks are often among the first pieces of critical infrastructure to overload or fail, leaving individuals disconnected from one another and from essential services and communications. With a total of $1M in prize money, the **Off-the-Grid Internet Challenge** seeks solutions that help individuals wirelessly access each other and information services like maps and messaging following a disaster.
 
-[Lean more (pdf)](/_assets/NSF-OffTheGrid.pdf)
+[**Learn more (pdf)**](/_assets/NSF-OffTheGrid.pdf)
