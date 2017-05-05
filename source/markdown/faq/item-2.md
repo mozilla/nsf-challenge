@@ -1,0 +1,1 @@
+Entrants who are not led by a U.S.-based person who is 18 years or older; organizations and companies that are not registered in the U.S.; employees of Mozilla, NSF and their immediate families; and anyone who has a non-awardee financial relationship with a Mozilla or NSF employee may not enter the Challenges.

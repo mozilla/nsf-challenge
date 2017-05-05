@@ -1,0 +1,1 @@
+**Scalability:** How will the idea or prototype be adaptable to broader communities or areas? How scalable is the project? How will the idea or prototype provide tools and documentation to anyone who might wish to build upon it or launch a similar effort?
