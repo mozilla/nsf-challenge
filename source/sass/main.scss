@@ -317,8 +317,13 @@ header.page-header {
   }
 }
 
-.mofo-footer .org-info .logo-container {
-  min-width: 6rem;
+.mofo-footer .org-info {
+  max-width: 45rem;
+
+  .logo-container {
+    min-width: 6rem;
+    text-align: center;
+  }
 }
 
 a,
@@ -389,34 +394,20 @@ button {
   a.btn,
   .btn {
     height: 42px;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    padding-right: 2.5rem;
     cursor: pointer;
     background: $nsf-yellow;
     font-weight: bold;
     color: $gray-darkest;
     position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 1.7rem;
-      height: 1.2rem;
-      font-size: 1rem;
-      background-image: url(../_images/icon-arrow-right.svg);
-      background-repeat: no-repeat;
-      background-position: 0.7rem 0.24rem;
-      transition: margin 0.3s;
+    @media screen and (max-width: $bp-sm) {
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
     }
 
     &:hover {
       background: darken($nsf-yellow, 10%);
       color: $gray-darkest;
-
-      &::after {
-        margin-left: 0.2rem;
-      }
     }
   }
 
@@ -429,7 +420,6 @@ button {
     img {
       flex-shrink: 0;
       margin-right: 30px;
-      height: 40px;
       width: 40px;
     }
 
@@ -475,6 +465,7 @@ button {
 
         display: flex;
         align-items: center;
+        justify-content: space-between;
       }
 
       &:first-child {
@@ -488,7 +479,6 @@ button {
 
         @media screen and (min-width: $bp-md) {
           max-width: 550px;
-          margin: 0 auto;
         }
       }
     }
