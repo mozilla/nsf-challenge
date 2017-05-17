@@ -124,13 +124,16 @@ header.page-header {
 .stage {
   height: 100%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: 15px 0;
+  justify-content: flex-start;
+  flex-shrink: 0;
 
   .stage-header,
   .stage-body {
     padding-left: 25px;
     padding-right: 25px;
+    -webkit-flex: 1 1;
   }
 
   .stage-header {
