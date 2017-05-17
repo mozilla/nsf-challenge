@@ -125,8 +125,6 @@ header.page-header {
   height: 100%;
   padding: 15px 0;
 
-
-
   .stage-header,
   .stage-body {
     padding-left: 25px;
@@ -151,9 +149,11 @@ header.page-header {
   @media screen and (min-width: $bp-lg) {
     display: flex;
     flex-flow: column;
+
     .stage-body {
       -webkit-flex: 1 1 548px;
     }
+
     .stage-header {
       -webkit-flex: 1 1 52px;
     }
