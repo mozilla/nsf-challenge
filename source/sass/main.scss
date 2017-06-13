@@ -513,6 +513,19 @@ button {
       }
     }
   }
+  .info-box {
+    a.secondary {
+      border-bottom: 2px solid $nsf-yellow;
+
+      &:hover {
+        border: 2px solid darken($nsf-yellow, 10%);
+        box-decoration-break: clone;
+        background: darken($nsf-yellow, 10%);
+        margin: 0 -2px;
+        color: #000;
+      }
+    }
+  }
 }
 
 footer.mofo-footer {
