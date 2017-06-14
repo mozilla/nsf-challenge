@@ -53,7 +53,7 @@ Organizer, at its sole discretion, reserves the right to disqualify any Submissi
 
 All Submissions must meet specific criteria to be considered for judging in the Challenges. Without limitation, the following conditions apply:
 
-- The Submissions must be responsive to the Challenges, meaning they must present complete wireless solutions capable of impacting a broad community of users in a way that improves on existing solutions and is affordable and adaptable. See the NSF WINS Site for more information on [Challenge 1](#challenge-1) and [Challenge 2](#challenge-2).
+- The Submissions must be responsive to the Challenges, meaning they must present complete wireless solutions capable of impacting a broad community of users in a way that improves on existing solutions and is affordable and adaptable. See the NSF WINS Site for more information on [Challenge 1](/#challenge-1) and [Challenge 2](/#challenge-2).
 - Although it is not required, Organizer strongly encourages Participants to host their Submission documentation publicly (via GitHub or equivalent), in such a manner that others can learn and benefit from the project. Participants are also encouraged to leverage open-source hardware and software in the design of their solutions and to make their solutions available under open licenses such as the MPL for code and Creative Commons licenses for documentation.  Participants not following these recommendations are welcome to enter but should explain any alternative steps they are taking to serve the goals of public access, interoperability, and enabling further innovation.
 - Team members must have all necessary copyright, trademark, patent or other proprietary or legal rights to the technology and documentation covered in their Submissions as well as the rights to share the Submissions with Sponsor in connection with the Challenges.
 - The Submission must be in English.
@@ -68,19 +68,21 @@ All Submissions will be reviewed and evaluated by a panel of experts drawn from 
 - Social Impact: How well tailored is the idea or prototype to the needs of the community and users for which it is designed? How will the design of the idea/prototype help engage community members in order to maximize utilization?
 - Scalability: How will the idea or prototype be adaptable to broader communities or areas? How scalable is the project? How will the idea or prototype provide tools and documentation to anyone who might wish to build upon it or launch a similar effort?
 
-See the NSF WINS Site for additional specific criteria related to [Challenge 1](#challenge-1) and [Challenge 2](#challenge-2).
+See the NSF WINS Site for additional specific criteria related to [Challenge 1](/#challenge-1) and [Challenge 2](/#challenge-2).
 
 For Finalists in each stage, interviews may be conducted via videoconferencing to gather additional information about proposed solutions. During the Working Prototype Stage, Finalists may also be required to provide live demos, either for judges or a public audience. In addition, during this stage, external reviewers and validators will confirm that the Submissions meet the necessary criteria though hardware testing.
 
 Judges will select the following winners for each of the two stages of both Challenges:
 
 Design Concept Stage
+
 - First Place - $60,000
 - Second Place - $40,000
 - Third Place - $30,000
 - 7 Honorable Mention Awards - $10,000
 
 Working Prototype Stage
+
 - First Place - $400,000
 - Second Place - $250,000
 - Third Place - $100,000
@@ -138,4 +140,4 @@ Each Participant acknowledges that other Teams may submit similar solutions and 
 
 **19. Winners Names**
 
-The names of the winners and the Judges will be posted on [the NSF WINS website](/).
+The names of the winners and the Judges will be posted on [the NSF WINS site](/).
