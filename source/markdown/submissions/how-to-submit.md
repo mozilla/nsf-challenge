@@ -1,6 +1,6 @@
 #### How to Submit
 
-The NSF WINS application cycle is now open; please see the [Application Guide (pdf)](/_assets/NSFWINSapplicationguide.pdf) for detailed information on how to apply.
+The NSF WINS application cycle is now open; please see the [Application Guide](#Apply) for detailed information on how to apply.
 
 NSF WINS Challenges entrants must submit documentation outlining their concepts, prototypes, associated designs, states of operation and technical capabilities.
 
