@@ -12,3 +12,4 @@
 **Bandwidth:** What download and upload speeds can the solution support for all concurrent users? Are these access speeds robust enough to support two-way video conversations for users?  
 **Network Footprint:** How well does the network utilize a minimal physical footprint and make efficient use of existing infrastructure?  
 **Security and Privacy:** Does the network provide secure access for users and respect user privacy?  
+**Access:** Does the network provide access to the whole Internet?
