@@ -1,5 +1,5 @@
 head
-  meta(http-equiv=`Content-Security-Policy`, content=`default-src 'none'; connect-src ws://127.0.0.1:2017; font-src https://code.cdn.mozilla.net; img-src 'self' data:; script-src 'self' 'sha256-iN7wpJdxHlpujRppkOA8N0+Mzp0ZqZr3lCtxM00Y63c='; style-src 'self' https://code.cdn.mozilla.net;`)
+  meta(http-equiv=`Content-Security-Policy`, content=`default-src 'none'; connect-src ws://127.0.0.1:2017; font-src https://code.cdn.mozilla.net; img-src 'self' data: https://www.google-analytics.com; script-src 'self' 'sha256-iN7wpJdxHlpujRppkOA8N0+Mzp0ZqZr3lCtxM00Y63c=' https://www.google-analytics.com; style-src 'self' https://code.cdn.mozilla.net;`)
   meta(charset=`utf-8`)
 
   meta(name=`viewport`, content=`width=device-width, initial-scale=1`)
@@ -18,3 +18,5 @@ head
   link(rel=`icon`, type=`image/x-icon`, href=`${env.virtualRoot}_images/favicon.png`)
 
   title=`WINS Challenges`
+
+  script(src=`${env.virtualRoot}_assets/ga.js`)
