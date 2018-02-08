@@ -1,0 +1,4 @@
+**Jon Rogers**
+
+Professor Jon Rogers holds a personal chair in creative technology at the University of Dundee and is a senior research fellow at the Mozilla Foundation. His work explores the human intersection between digital technologies and the design of physical of things. He aims to balance the opportunities of emerging technologies with the challenges of ethical and responsible practices. Jon has a PhD in neural networks from Imperial College London and built up his knowledge while being a tutor and researcher at the Royal College of Art. He is currently based in Berlin's Mozilla offices, working with the Mozilla Foundation to build the Open IoT Studio, a project that seeks to advance responsible open IoT through professional practices and a network of practitioners who conduct research, make prototypes and build meaningful collaborations. He lives between Berlin and Fife, Scotland, swapping lakes and forests for big fires and cold seas.
+

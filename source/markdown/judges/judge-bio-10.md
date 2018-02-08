@@ -1,0 +1,6 @@
+**Christopher Mitchell**
+
+Christopher Mitchell is the Director of the Community Broadband Networks Initiative with the Institute for Local Self-Reliance (ILSR) in Minneapolis. Mitchell is a leading national expert on community networks and Internet access. Within his capacity at ILSR, he also serves as the policy director for Next Century Cities, a national collaboration of mayors and CIOs seeking universal access to fast, affordable, and reliable Internet connections. Mitchell runs MuniNetworks.org, the comprehensive online clearinghouse of information about local government policies to improve Internet access. Their interactive community broadband network map tracks more than 500 such networks. He also hosts podcasts, including Community Broadband Bits and Building Local Power. In 2015, the White House used ILSR's research as building blocks in a National Economic Council report encouraging community networks. In 2012 he was named to the Top 25 in Public Sector Technology by Government Technology.
+@communitynets
+
+

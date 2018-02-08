@@ -266,12 +266,16 @@ header.page-header {
   justify-content: space-between;
 }
 
-.challenges {
-  .challenges-switcher {
+.judge-container {
+  display: flex;
+}
+
+.switcher {
+  .switcher-item {
     margin-bottom: 62px;
     border-bottom: solid 1px $nsf-purple;
 
-    .challenge-button-container {
+    .switcher-button-container {
       display: inline-block;
 
       @media screen and (max-width: $bp-sm) {
@@ -293,7 +297,7 @@ header.page-header {
         width: calc(50% - 14px);
       }
 
-      .challenges-button {
+      .switcher-button {
         width: 100%;
         font-size: 22px;
         font-weight: 500;
@@ -320,7 +324,7 @@ header.page-header {
     }
   }
 
-  .challenges-content {
+  .switcher-content {
     &.hidden {
       display: none;
     }

@@ -47,6 +47,7 @@ var MenuLinks = React.createClass({
       // Check to see which is the current nav item.
       links.forEach((element) => {
         if (scrollY >= element.offsetTop - ( window.innerHeight / 2 )) {
+console.log(element.getAttribute(`id`), element.offsetTop);
           active = element.getAttribute(`id`);
         }
       });
