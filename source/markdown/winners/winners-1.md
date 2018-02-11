@@ -1,6 +1,8 @@
-#### OFF THE GRID INTERNET CHALLENGE WINNERS
+#### Off-the-Grid Internet Challenge Winners
 
 *When disasters strike, communications networks are among the first pieces of critical infrastructure to overload or fail. These 10 winners leverage both the internet’s decentralized design and current wireless technology to keep people connected to each other — and vital messaging and mapping services — in the aftermath of earthquakes, hurricanes, and other disasters.*
+
+The following awards recognize outstanding achievement during the Design Concept Stage (Stage 1) of the Challenge:
 
 **Test ($1)**
 

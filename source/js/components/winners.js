@@ -71,8 +71,8 @@ var Winners = React.createClass({
     return (
       <div className="switcher">
         <div className="switcher-item">
-          <TabButton activateTab={this.updateHash} activeTab={this.state.activeTab} tabIndex="winners-1">Winners 1</TabButton>
-          <TabButton activateTab={this.updateHash} activeTab={this.state.activeTab} tabIndex="winners-2">Winners 2</TabButton>
+          <TabButton activateTab={this.updateHash} activeTab={this.state.activeTab} tabIndex="winners-1">Challenge 1</TabButton>
+          <TabButton activateTab={this.updateHash} activeTab={this.state.activeTab} tabIndex="winners-2">Challenge 2</TabButton>
         </div>
         <TabContent activeTab={this.state.activeTab} tabIndex="winners-1">
           <div className="markdown">
