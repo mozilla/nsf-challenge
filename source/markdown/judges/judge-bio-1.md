@@ -1,4 +1,3 @@
 **Elizabeth M. Belding**
 
 Elizabeth M. Belding is a Professor in the Department of Computer Science at the University of California, Santa Barbara. Elizabeth’s research focuses on mobile and wireless networking, including network performance analysis, and information and communication technologies for development (ICTD). She is also a co-developer of the AODV routing protocol for mobile networks. She applies her wireless network expertise to a wide range of contexts, and is particularly interested in improving Internet and cellular accessibility in developing and resource-challenged communities worldwide. Elizabeth is the author of over 140 technical papers on wireless networking and has served on over 70 conference technical program committees. She was Vice Chair of the UCSB Computer Science department from 2009-15, and is again currently Vice Chair. She is an IEEE Fellow and an ACM Distinguished Scientist.
-
