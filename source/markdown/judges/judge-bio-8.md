@@ -2,4 +2,4 @@
 
 Louisiana loses a football field of wetlands every hour. I am using virtual reality to help learners understand how this land loss looks, sounds, and feels. To save the coast, we have to know the coast—what it gives us and how its loss will change our lives. My research is designed to make these connections. When students immerse themselves in the coast’s beauty and bounty, they not only expand their view of the world, but also learn how to save the landscape in their backyard. Some kids in south Louisiana grow up exploring south Louisiana’s wetlands. I want to bring the wetlands to the classroom so that students everywhere in Louisiana and eventually beyond our state can see for themselves what the coast gives us and what we stand to lose. Virtual reality offers an immediate experience, but I also ground my lessons in a community on the front lines of land loss. That is why I am working with the Biloxi-Chitimacha-Choctaw tribe, from Isle de Jean Charles, LA.
 
-[@_drhstone](https://twitter.com/_drhstone)
+[@\_drhstone](https://twitter.com/_drhstone)
