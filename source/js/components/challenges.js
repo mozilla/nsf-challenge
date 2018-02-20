@@ -9,12 +9,12 @@ var TabButton = React.createClass({
     this.props.activateTab(this.props.tabIndex);
   },
   render: function() {
-    var className = classnames(`challenges-button`, {
+    var className = classnames(`switcher-button`, {
       "active": this.props.activeTab === this.props.tabIndex
     });
 
     return (
-      <div className="challenge-button-container">
+      <div className="switcher-button-container">
         <div className="nav-offset" id={this.props.tabIndex}></div>
         <a href={`#` + this.props.tabIndex} onClick={this.onClick} className={className}>{this.props.children}</a>
       </div>
@@ -24,7 +24,7 @@ var TabButton = React.createClass({
 
 var TabContent = React.createClass({
   render: function() {
-    var className = classnames(`challenges-content`, {
+    var className = classnames(`switcher-content`, {
       "hidden": this.props.activeTab !== this.props.tabIndex
     });
 
@@ -69,8 +69,8 @@ var Challenges = React.createClass({
   },
   render: function() {
     return (
-      <div className="challenges">
-        <div className="challenges-switcher">
+      <div className="switcher">
+        <div className="switcher-item">
           <TabButton activateTab={this.updateHash} activeTab={this.state.activeTab} tabIndex="challenge-1">Challenge 1</TabButton>
           <TabButton activateTab={this.updateHash} activeTab={this.state.activeTab} tabIndex="challenge-2">Challenge 2</TabButton>
         </div>
