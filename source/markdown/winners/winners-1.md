@@ -6,7 +6,7 @@ The following awards recognize outstanding achievement during the Design Concept
 
 **Project Lantern | First Place ($60,000)**
 
-A Lantern is a keychain-sized device that hosts decentralized web apps with local maps, supply locations, and more. These apps are pushed to Lanterns via long-range radio and Wi-Fi, and then saved offline to browsers for continued use. Lanterns can be distributed by emergency responders and are accessed by citizens through a special-purpose Wi-Fi network supported by the Lanterns. Project by Paper & Equator in New York, NY in collaboration with the Shared Reality Lab at McGill University; [learn more](https://lantern.works/).
+A Lantern is a keychain-sized device that hosts decentralized web apps with local maps, supply locations, and more. These apps are pushed to Lanterns via long-range radio and Wi-Fi, and then saved offline to browsers for continued use. Lanterns can be distributed by emergency responders and are accessed by citizens through a special-purpose Wi-Fi network supported by the Lanterns. Project by Paper & Equator in New York, NY in collaboration with the Shared Reality Lab at McGill University; [learn more](http://lantern.works/).
 
 **HERMES | Second Place ($40,000)**
 
