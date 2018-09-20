@@ -28,9 +28,16 @@ if (document.getElementById(`challenges-switcher`)) {
   );
 }
 
+if (document.getElementById(`grand-winners-switcher`)) {
+  ReactDOM.render(
+    <Winners round="grand-"/>,
+    document.getElementById(`grand-winners-switcher`)
+  );
+}
+
 if (document.getElementById(`winners-switcher`)) {
   ReactDOM.render(
-    <Winners/>,
+    <Winners round=""/>,
     document.getElementById(`winners-switcher`)
   );
 }
