@@ -1,8 +1,6 @@
-#### Smart Community Networks Challenge Winners
+#### Smart Community Networks Challenge Stage 1 Winners
 
-*Many communities across the U.S. lack reliable internet access. Sometimes commercial providers don’t supply affordable access; sometimes a particular community is too isolated; sometimes the speed and quality of access is too slow. These 10 winners aim to leverage existing infrastructure — physical or network — to provide high-quality wireless connectivity to communities in need.*
-
-The following awards recognize outstanding achievement during the Design Concept Stage (Stage 1) of the Challenge:
+*The following awards recognize outstanding achievement during the Design Concept Stage (Stage 1) of the Challenge:*
 
 **Equitable Internet Initiative (EII) | First Place ($60,000)**
 
