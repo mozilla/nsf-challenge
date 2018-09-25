@@ -1,0 +1,11 @@
+Tue Sep 25 2018 08:44:57 GMT-0400 (EDT)
+
+
+commit 3bee5b442bcd8a8c38ce835f2f28b574c283e3b7
+Merge: f897e1d 9ae96e7
+Author: Alan Mooiman <amooiman@gmail.com>
+Date:   Fri Sep 21 08:59:43 2018 -0500
+
+    Merge pull request #2 from MozillaFoundation/grand-prize-update
+    
+    added grand prize winners to markdown files

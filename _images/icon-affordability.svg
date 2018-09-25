@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="32px" height="28px" viewBox="0 0 32 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="NSF-Challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Desktop-Comp" transform="translate(-158.000000, -1618.000000)" stroke="#999CE5">
+            <g id="Icons" transform="translate(154.000000, 1393.000000)">
+                <g id="Page-1" transform="translate(4.000000, 225.000000)">
+                    <polyline id="Stroke-1" points="30.4331429 20.0031955 30.4331429 26.8022864 0.571428571 26.8022864 0.571428571 3.76146818 30.4331429 3.76146818 30.4331429 10.5605591"></polyline>
+                    <polyline id="Stroke-3" points="3.05988571 0.613636364 26.9490286 0.613636364 26.9490286 3.76159091"></polyline>
+                    <path d="M3.05988571,0.613636364 C1.68502857,0.613636364 0.571885714,1.78813636 0.571885714,3.23631818" id="Stroke-5"></path>
+                    <path d="M21.5369143,10.5600682 C19.0626286,10.5600682 17.0580571,12.6734318 17.0580571,15.2813864 C17.0580571,17.8893409 19.0626286,20.0027045 21.5369143,20.0027045 L31.4283429,20.0027045 L31.4283429,10.5600682 L21.5369143,10.5600682 Z" id="Stroke-7"></path>
+                    <path d="M21.9723429,13.7077773 C22.7974857,13.7077773 23.4649143,14.4122318 23.4649143,15.2811409 C23.4649143,16.1512773 22.7974857,16.8557318 21.9723429,16.8557318 C21.1472,16.8557318 20.4797714,16.1512773 20.4797714,15.2811409 C20.4797714,14.4122318 21.1472,13.7077773 21.9723429,13.7077773 Z" id="Stroke-9"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
